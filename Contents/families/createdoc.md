@@ -1,6 +1,6 @@
-# Création d'un document  {#rest:e769b476-0033-407c-b453-4e8466e09975}
+# Création d'un document  {#httpapi-ref:e769b476-0033-407c-b453-4e8466e09975}
 
-## URL {#rest:ea0fbaaf-b3aa-4307-9a92-eed7359c323e}
+## URL {#httpapi-ref:ea0fbaaf-b3aa-4307-9a92-eed7359c323e}
 
     POST /api/v1/families/<famName>/documents/
 
@@ -14,9 +14,9 @@ Exemple :
 
 <span class="flag inline nota-bene"></span> Le nom de la famille est insensible à la casse.
 
-## Content {#rest:09cc3928-048c-4724-bd92-2fe099d37244}
+## Content {#httpapi-ref:09cc3928-048c-4724-bd92-2fe099d37244}
 
-### Format JSON {#rest:f9058127-a6a9-4f34-94d7-cf6ca89458fd}
+### Format JSON {#httpapi-ref:f9058127-a6a9-4f34-94d7-cf6ca89458fd}
 
 Le contenu de la requête doit contenir une donnée JSON avec la liste des attributs à valuer.
 
@@ -50,7 +50,7 @@ Pour enregistrer le fichier, il sera nécessaire de passer par la ressource
 d'attribut de type fichier.
 
 
-### Format urlEncoded {#rest:a7f23059-e18a-4441-817c-2e08e60bb6ab}
+### Format urlEncoded {#httpapi-ref:a7f23059-e18a-4441-817c-2e08e60bb6ab}
 
 Le contenu de la requête contient la liste des valeurs d'attributs à enregistrer.
 Chaque variable (POST) est le nom de l'attribut (casse insensible).
@@ -61,11 +61,11 @@ Le type de la requête est `application/x-www-form-urlencoded`.
 
 Cette forme permet aussi d'enregistrer des fichiers dans le document.
 
-## Structure de retour {#rest:5c923b50-4a3c-404f-874b-94d4d0b1b367}
+## Structure de retour {#httpapi-ref:5c923b50-4a3c-404f-874b-94d4d0b1b367}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:e8c59df1-2313-4023-83b5-4c6786948eae}
+### En cas de réussite : {#httpapi-ref:e8c59df1-2313-4023-83b5-4c6786948eae}
 
 La partie `data` contient un champ `document` qui inclut 3 champs :
 
@@ -103,7 +103,7 @@ Exemple :
 
 La liste des propriétés est documentée dans la [documentation de format collection][properties].
 
-### En cas d'échec {#rest:481851fe-c39f-424f-b13f-9756db981ad9}
+### En cas d'échec {#httpapi-ref:481851fe-c39f-424f-b13f-9756db981ad9}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 

@@ -1,5 +1,5 @@
-# Passer une transition {#rest:697b7714-d986-4ae5-8020-a5602cfbe7d5}
-## URL   {#rest:3ebdeef9-fb96-4c3f-9860-77a418f37aee}
+# Passer une transition {#httpapi-ref:697b7714-d986-4ae5-8020-a5602cfbe7d5}
+## URL   {#httpapi-ref:3ebdeef9-fb96-4c3f-9860-77a418f37aee}
 
     POST /api/v1/documents/<documentId>/workflows/transitions/<transitionId>
 
@@ -11,7 +11,7 @@ Exemple :
     POST /api/v1/documents/<documentId>/workflows/transitions/my_transmission
 
 
-## Content   {#rest:986b642a-091a-43a3-8cd9-85bf4fa1a7d9}
+## Content   {#httpapi-ref:986b642a-091a-43a3-8cd9-85bf4fa1a7d9}
 
 Le contenu est une structure JSON qui comprend les informations suivantes :
 
@@ -30,11 +30,11 @@ Exemple :
     }
 
 
-## Structure de retour   {#rest:d4411750-3515-409e-bc3c-f872a68e37fb}
+## Structure de retour   {#httpapi-ref:d4411750-3515-409e-bc3c-f872a68e37fb}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite :   {#rest:7e773824-c340-4e33-a154-15e6901aa362}
+### En cas de réussite :   {#httpapi-ref:7e773824-c340-4e33-a154-15e6901aa362}
 
 La partie `data` contient :
 
@@ -77,7 +77,7 @@ Exemple :
 
 
 
-### En cas d'échec   {#rest:07de3437-cb10-4c2a-8047-31edeeeea2fd}
+### En cas d'échec   {#httpapi-ref:07de3437-cb10-4c2a-8047-31edeeeea2fd}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 

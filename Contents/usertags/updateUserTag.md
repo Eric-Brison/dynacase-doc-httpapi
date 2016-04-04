@@ -1,5 +1,5 @@
-# Modifier un tag utilisateur {#rest:bcca7517-ecff-4e8a-8339-e8defa71bc4c}
-## URL  {#rest:d0abc03c-d650-4c7e-8e35-ce5de1795aed}
+# Modifier un tag utilisateur {#httpapi-ref:bcca7517-ecff-4e8a-8339-e8defa71bc4c}
+## URL  {#httpapi-ref:d0abc03c-d650-4c7e-8e35-ce5de1795aed}
 
     PUT /api/v1/documents/<documentId>/usertags/<tagid>
 
@@ -12,7 +12,7 @@ Exemple :
 
 <span class="flag inline nota-bene"></span> Si le tag n'existe déjà, il est créé.
 
-## Content  {#rest:edf3bccd-44da-4589-8d1a-ac6597f10fb1}
+## Content  {#httpapi-ref:edf3bccd-44da-4589-8d1a-ac6597f10fb1}
 
 
 Le contenu contient la valeur du tag.  
@@ -20,11 +20,11 @@ Si il est vide la valeur est égale à la chaîne vide.
 
 Si le contenu est une structure JSON, la valeur retournée est une structure.
 
-## Structure de retour  {#rest:bf7517bd-d1bd-499f-9beb-0e8a401396de}
+## Structure de retour  {#httpapi-ref:bf7517bd-d1bd-499f-9beb-0e8a401396de}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite :  {#rest:bc1a8bcb-b5cb-4605-a479-629af8598263}
+### En cas de réussite :  {#httpapi-ref:bc1a8bcb-b5cb-4605-a479-629af8598263}
 
 La partie `data` contient 2 champs :
 
@@ -51,7 +51,7 @@ Exemple :
     }
 
 
-### En cas d'échec  {#rest:58d87ac3-a366-4df9-9618-7c7b8d6b5a68}
+### En cas d'échec  {#httpapi-ref:58d87ac3-a366-4df9-9618-7c7b8d6b5a68}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 

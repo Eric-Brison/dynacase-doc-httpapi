@@ -1,8 +1,8 @@
-# Cache {#rest:804f8d68-acfa-4a35-bb41-27b2a27c14dc}
+# Cache {#httpapi-ref:804f8d68-acfa-4a35-bb41-27b2a27c14dc}
 
 L'API inclut un système de cache par [etag][wikipediaEtag].
 
-## Principe de fonctionnement {#rest:f1385a83-6bfe-43bf-b974-0caf17e88614}
+## Principe de fonctionnement {#httpapi-ref:f1385a83-6bfe-43bf-b974-0caf17e88614}
 
 Les etag sont une partie du standard HTTP 1.1 et permettent de ne pas recalculer les ressources systématiquement.
 
@@ -18,7 +18,7 @@ Le cache n'est bien évidemment actif que pour les ressources accédées via la 
 
 Le cache fait partie du standard HTTP et est implémenté en standard (sans modification à apporter) sur les principaux navigateurs.
 
-##Désactivation du cache {#rest:dfde9829-d6d7-492f-b608-60b023b783ae}
+##Désactivation du cache {#httpapi-ref:dfde9829-d6d7-492f-b608-60b023b783ae}
 
 Vous pouvez désactiver le cache :
  

@@ -1,20 +1,20 @@
-# Liste des recherches {#rest:9b8f4a2b-3f56-4b21-a7b7-bb299b4ac7b3}
+# Liste des recherches {#httpapi-ref:9b8f4a2b-3f56-4b21-a7b7-bb299b4ac7b3}
 
-## URL canonique {#rest:b7c4d707-d0db-40a0-a429-cd06fd3a23b2}
+## URL canonique {#httpapi-ref:b7c4d707-d0db-40a0-a429-cd06fd3a23b2}
 
     GET /api/v1/searches/
 
 Récupération de la liste des recherches accessibles.
 
-## Content {#rest:9cb7063c-5a36-41ee-8e9c-8d4a85b37f9d}
+## Content {#httpapi-ref:9cb7063c-5a36-41ee-8e9c-8d4a85b37f9d}
 
 Le contenu de la requête est vide.
 
-## Structure de retour {#rest:99315351-3ddd-4a82-a3a8-af2e0937bce7}
+## Structure de retour {#httpapi-ref:99315351-3ddd-4a82-a3a8-af2e0937bce7}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:87cb2837-629e-40cb-8b8e-0e8a89014df8}
+### En cas de réussite : {#httpapi-ref:87cb2837-629e-40cb-8b8e-0e8a89014df8}
 
 La partie `data` contient :
 
@@ -58,7 +58,7 @@ Exemple :
     }
 
 
-### En cas d'échec {#rest:996ba68e-77f5-41cf-81b7-98aa8a1ec316}
+### En cas d'échec {#httpapi-ref:996ba68e-77f5-41cf-81b7-98aa8a1ec316}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -67,9 +67,9 @@ Les raisons d'échecs spécifiques à cette requête sont
 | Sens de l'orderBy inconnu                      |         400 | CRUD0501   |
 | Attribut ou propriété d'orderBy invalide       |         400 | CRUD0502   |
 
-## Résultat partiel {#rest:0d57bb09-b1d3-4ba8-a5af-aff76a542ccf}
+## Résultat partiel {#httpapi-ref:0d57bb09-b1d3-4ba8-a5af-aff76a542ccf}
 
-### Pagination et tri {#rest:b85c060a-15c2-4bd1-a99f-ce3b7841de60}
+### Pagination et tri {#httpapi-ref:b85c060a-15c2-4bd1-a99f-ce3b7841de60}
 
 La liste des documents peut être paginée et ordonnée.
 
@@ -89,7 +89,7 @@ Les mots clefs GET sont les suivants :
 Les paramètres appliqués sont résumés dans le retour de la collection 
 `requestParameter`.
 
-### Informations retournées {#rest:170d8527-8224-404d-af50-ed3cd0f6bd55}
+### Informations retournées {#httpapi-ref:170d8527-8224-404d-af50-ed3cd0f6bd55}
 
 Les documents peuvent être retournés avec plus ou moins d'information.
 
@@ -106,7 +106,7 @@ Par défaut : `fields=document.properties`
 
 La liste des propriétés est documentée dans la [documentation de format collection][properties].
 
-## Cache {#rest:ea45c330-8541-41e1-9167-9fa4b4990b26}
+## Cache {#httpapi-ref:ea45c330-8541-41e1-9167-9fa4b4990b26}
 
 La collection n'a pas de cache.
 

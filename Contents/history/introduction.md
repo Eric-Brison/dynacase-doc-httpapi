@@ -1,12 +1,12 @@
-# Document : Historique {#rest:01d9b18d-a597-411d-8d8f-a5172b81f60b}
+# Document : Historique {#httpapi-ref:01d9b18d-a597-411d-8d8f-a5172b81f60b}
 
 Cette sous-collection décrit les messages de l'historique des documents
 
-## URL {#rest:670071f5-008d-42e8-bde3-0bcee337ae50}
+## URL {#httpapi-ref:670071f5-008d-42e8-bde3-0bcee337ae50}
 
 L'url d'accès est : `/api/v1/documents/<documentId>/history/`
 
-## Méthodes  {#rest:b2b3b00f-6492-4315-aec4-f99956fafd59}
+## Méthodes  {#httpapi-ref:b2b3b00f-6492-4315-aec4-f99956fafd59}
 
 La sous-collection `history` implémente les éléments suivants :
 
@@ -30,4 +30,4 @@ La sous-collection `history` implémente les éléments suivants :
 
 
 <!-- links -->
-[get_histo]: #rest:9ae75dac-8eb5-4fa9-a608-7313b90fe33c
+[get_histo]: #httpapi-ref:9ae75dac-8eb5-4fa9-a608-7313b90fe33c

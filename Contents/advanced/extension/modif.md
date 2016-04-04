@@ -1,4 +1,4 @@
-# Extension de l'API REST {#rest:50aff82b-8921-42ff-81b1-69a1a0103d98}
+# Extension de l'API REST {#httpapi-ref:50aff82b-8921-42ff-81b1-69a1a0103d98}
 
 Il est possible à un module d'étendre l'API REST pour ajouter de nouvelles
 ressources ou surcharger les ressources existantes.
@@ -8,7 +8,7 @@ L'extension de l'API REST passe par deux éléments :
 * une classe de CRUD : celle-ci fournit les 4 méthodes du CRUD et retourne les valeurs.
 * une inscription dans la liste des API existantes.
 
-## Classe de CRUD {#rest:651043a1-f290-466e-977f-d39a195a1195}
+## Classe de CRUD {#httpapi-ref:651043a1-f290-466e-977f-d39a195a1195}
 
 Les classes de CRUD étendent la classe `\Dcp\HttpApi\V1\Crud` et doivent
 implémenter les méthodes suivantes :
@@ -46,7 +46,7 @@ de la gestion du [cache][cache].
  * si le `header` `content-type` est `x-www-form-urlencoded` ou `form-data` : le contenu est le `php://input` form décodé,
 * `DELETE` :  le `contentParameters` est un array vide.
 
-## Enregistrement CRUD {#rest:7466f89c-87de-4dbe-89af-fdc2db37b9a4}
+## Enregistrement CRUD {#httpapi-ref:7466f89c-87de-4dbe-89af-fdc2db37b9a4}
 
 La nouvelle classe de CRUD doit ensuite être enregistrée auprès de l'application
 `HTTPAPI_V1`, ceci se fait via l'ajout d'un fichier `json` dans le répertoire
@@ -122,5 +122,5 @@ réalisée en exécutant l'action `INIT_RULES` de l'application `HTTAPI_V1`.
 * soit via l'url suivante connecté en admin : `?app=HTTPAPI_V1&action=INIT_RULES`,
 * soit via l'appel suivant (dans le info.xml, ou en wiff) `./wsh.php --app=HTTPAPI_V1 --action=INIT_RULES`.
 
-[save_CRUD]: #rest:651043a1-f290-466e-977f-d39a195a1195
-[cache]: #rest:804f8d68-acfa-4a35-bb41-27b2a27c14dc
+[save_CRUD]: #httpapi-ref:651043a1-f290-466e-977f-d39a195a1195
+[cache]: #httpapi-ref:804f8d68-acfa-4a35-bb41-27b2a27c14dc

@@ -3,6 +3,7 @@ book:
     module: "API HTTP Core"
     version: "1.0"
     author: "Anakeen Labs &lt;labs@anakeen.com&gt;"
+    id_prefix: "httpapi-ref"
     githubsrc: "https://github.com/Anakeen/dynacase-doc-httpapi"
     edition: "2"
     chapters:

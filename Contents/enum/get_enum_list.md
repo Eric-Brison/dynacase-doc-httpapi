@@ -1,20 +1,20 @@
-# Liste des attributs énumérés {#rest:69fba1cf-5754-4189-ac07-c16f348e7fda}
+# Liste des attributs énumérés {#httpapi-ref:69fba1cf-5754-4189-ac07-c16f348e7fda}
 
-## URL  {#rest:9a7f786a-d1da-49a6-ab5b-87ddaa460f4d}
+## URL  {#httpapi-ref:9a7f786a-d1da-49a6-ab5b-87ddaa460f4d}
 
     GET /api/v1/families/<famName>/enumerates/
 
 Récupére la liste des énumérés de la famille `<famname>`.
 
-## Content  {#rest:7b3b19a8-646c-4082-b8a0-a333c5a75893}
+## Content  {#httpapi-ref:7b3b19a8-646c-4082-b8a0-a333c5a75893}
 
 Le contenu de la requête est vide.
 
-## Structure de retour  {#rest:4b63cc4a-fc3a-4bff-825f-252a300dceb4}
+## Structure de retour  {#httpapi-ref:4b63cc4a-fc3a-4bff-825f-252a300dceb4}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite :  {#rest:9a44c2df-f3d4-4dc1-a2f8-c6eeb75b1863}
+### En cas de réussite :  {#httpapi-ref:9a44c2df-f3d4-4dc1-a2f8-c6eeb75b1863}
 
     [javascript]
     {
@@ -54,7 +54,7 @@ L'api retourne une liste d'énumérés (`enumerates`) chacun des éléments cont
 * le nom logique de l'attribut énuméré.
 
 
-### En cas d'échec  {#rest:7539ed03-7491-4ccb-acec-51c2a332a18e}
+### En cas d'échec  {#httpapi-ref:7539ed03-7491-4ccb-acec-51c2a332a18e}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -85,9 +85,9 @@ Exemple :
 
 
 
-## Filtres  {#rest:d77fb9b8-aa8e-4a25-bc46-c2df14c74ceb}
+## Filtres  {#httpapi-ref:d77fb9b8-aa8e-4a25-bc46-c2df14c74ceb}
 
-### Slice {#rest:1245cc5f-ce50-4f05-98d7-7ad7b8b5b4d0}
+### Slice {#httpapi-ref:1245cc5f-ce50-4f05-98d7-7ad7b8b5b4d0}
 
 Cette option indique le nombre de valeur maximum à retourner.
 
@@ -95,7 +95,7 @@ Exemple :
 
     GET api/v1/families/<famName>/enumerates/?slice=10
 
-### Offset {#rest:0a2255e6-86b0-43cf-b72d-a9e4e286bb03}
+### Offset {#httpapi-ref:0a2255e6-86b0-43cf-b72d-a9e4e286bb03}
 
 Index à partir duquel, les énumérés sont retournées.
 

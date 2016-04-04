@@ -1,5 +1,5 @@
-# Récupérer la liste des étapes  {#rest:af743cfe-c089-4706-a5fb-a131f68020d2}
-## URL   {#rest:2dcd6047-0e9a-4bb2-b0f8-874bee17320b}
+# Récupérer la liste des étapes  {#httpapi-ref:af743cfe-c089-4706-a5fb-a131f68020d2}
+## URL   {#httpapi-ref:2dcd6047-0e9a-4bb2-b0f8-874bee17320b}
 
     GET /api/v1/documents/<documentId>/workflows/states/
 
@@ -19,15 +19,15 @@ Exemple :
     GET /api/v1/documents/my_document/workflows/states/
 
 
-## Content   {#rest:e4915ac8-fb6f-40e5-ba61-d5f402de7089}
+## Content   {#httpapi-ref:e4915ac8-fb6f-40e5-ba61-d5f402de7089}
 
 Le contenu de la requête est vide.
 
-## Structure de retour   {#rest:997018db-1e1e-4200-9f16-917f73206a52}
+## Structure de retour   {#httpapi-ref:997018db-1e1e-4200-9f16-917f73206a52}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite :   {#rest:758cb729-068f-4757-9c37-9821233d6a36}
+### En cas de réussite :   {#httpapi-ref:758cb729-068f-4757-9c37-9821233d6a36}
 
 La partie `data` contient :
 
@@ -74,7 +74,7 @@ Exemple :
         }
     }
 
-### En cas d'échec   {#rest:fbf45270-2026-4504-80d2-14314ec9278f}
+### En cas d'échec   {#httpapi-ref:fbf45270-2026-4504-80d2-14314ec9278f}
 
 Les raisons d'échecs spécifiques à cette requête sont
 

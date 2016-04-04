@@ -1,6 +1,6 @@
-# Propriétés d'une famille {#rest:6b195156-0cda-47c8-9a9a-04ec13562c9a}
+# Propriétés d'une famille {#httpapi-ref:6b195156-0cda-47c8-9a9a-04ec13562c9a}
 
-## URL {#rest:b79ed7d5-2340-4e7b-9563-bd4d784f0e6a}
+## URL {#httpapi-ref:b79ed7d5-2340-4e7b-9563-bd4d784f0e6a}
 
     GET /api/v1/families/<famName>
 
@@ -12,15 +12,15 @@ Exemple :
 
 <span class="flag inline nota-bene"></span> Le nom de la famille est insensible à la casse.
 
-## Content {#rest:27aa08ee-2108-47d1-90ba-e7c4cf4f608f}
+## Content {#httpapi-ref:27aa08ee-2108-47d1-90ba-e7c4cf4f608f}
 
 Le contenu de la requête est vide.
 
-## Structure de retour {#rest:cd937f64-a71c-4001-9e1b-55d7ca1893da}
+## Structure de retour {#httpapi-ref:cd937f64-a71c-4001-9e1b-55d7ca1893da}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:5bff5070-dd45-4bdf-a921-dd2a81d8b865}
+### En cas de réussite : {#httpapi-ref:5bff5070-dd45-4bdf-a921-dd2a81d8b865}
 
 La partie `data` contient 2 champs :
 
@@ -49,7 +49,7 @@ Exemple :
     }
 
 
-### En cas d'échec {#rest:bf7906b7-9690-44ec-8156-7a1cbb536486}
+### En cas d'échec {#httpapi-ref:bf7906b7-9690-44ec-8156-7a1cbb536486}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -80,7 +80,7 @@ Cas d'erreur de privilège
         "exceptionMessage" : "Document \"1051\" access deny : Pas de privil\u00e8ge view pour le document famille [1051]"
     }
 
-## Résultat partiel {#rest:789802cd-80ee-4b1d-92a2-eaa49da90046}
+## Résultat partiel  {#httpapi-ref:787490fc-06dc-4df3-9ba2-b96da614b5eb}
 
 La ressource peut être retournée avec plus ou moins d'information.
 

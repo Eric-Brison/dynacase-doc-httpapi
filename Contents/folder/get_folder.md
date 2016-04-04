@@ -1,20 +1,20 @@
-# Consultation du contenu d'un dossier {#rest:f3e3869b-4dcf-40ee-9733-3f4b57e2386f}
+# Consultation du contenu d'un dossier {#httpapi-ref:f3e3869b-4dcf-40ee-9733-3f4b57e2386f}
 
-## URL canonique {#rest:0dd9c8af-80a2-4fd4-8859-1d2f6362aff9}
+## URL canonique {#httpapi-ref:0dd9c8af-80a2-4fd4-8859-1d2f6362aff9}
 
     GET /api/v1/folders/<folderId>/documents/
 
 Récupération de la liste des documents contenu par le dossier `<folderId>`.
 
-## Content {#rest:a6f9271b-4262-4165-be35-83bc91c6d274}
+## Content {#httpapi-ref:a6f9271b-4262-4165-be35-83bc91c6d274}
 
 Le contenu de la requête est vide.
 
-## Structure de retour {#rest:d98179aa-a11f-4028-9e0f-a43859d3220f}
+## Structure de retour {#httpapi-ref:d98179aa-a11f-4028-9e0f-a43859d3220f}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:136feb3e-5345-4a9a-bc48-2bcc9de08395}
+### En cas de réussite : {#httpapi-ref:136feb3e-5345-4a9a-bc48-2bcc9de08395}
 
 La partie `data` contient :
 
@@ -67,7 +67,7 @@ Exemple :
 Les valeurs retournées correspondent aux valeurs de la vue de consultation
 par défaut.
 
-### En cas d'échec {#rest:c25358e8-0d31-43ce-aec8-acc3b9456e14}
+### En cas d'échec {#httpapi-ref:c25358e8-0d31-43ce-aec8-acc3b9456e14}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -77,9 +77,9 @@ Les raisons d'échecs spécifiques à cette requête sont
 | Attribut ou propriété d'orderBy invalide                |         400 | CRUD0502   |
 | L'identifiant du dossier ne correspond pas à un dossier |         400 | CRUD0504   |
 
-## Résultat partiel {#rest:9a860053-1b51-4371-8632-ab7f0ff7f2c6}
+## Résultat partiel {#httpapi-ref:9a860053-1b51-4371-8632-ab7f0ff7f2c6}
 
-### Pagination et tri {#rest:9bc36793-b627-445e-b2ed-66b30af89a45}
+### Pagination et tri {#httpapi-ref:9bc36793-b627-445e-b2ed-66b30af89a45}
 
 La liste des documents peut être paginée et ordonnée.
 
@@ -102,7 +102,7 @@ Exemple :
 
 * GET `/folders/<folderId>/?orderBy=title:asc,id:desc&slice=100&offset=20`
 
-### Informations retournées {#rest:bd501807-6f2c-4626-b741-a88a9144f796}
+### Informations retournées {#httpapi-ref:bd501807-6f2c-4626-b741-a88a9144f796}
 
 Les documents peuvent être retournés avec plus ou moins d'information.
 
@@ -124,7 +124,7 @@ Par défaut : `fields=document.properties`
 
 La liste des propriétés est documentée dans la [documentation de format collection][properties].
 
-## Cache {#rest:8c76352a-8242-4e40-abb5-632c18730f6f}
+## Cache {#httpapi-ref:8c76352a-8242-4e40-abb5-632c18730f6f}
 
 La collection n'a pas de cache.
 
