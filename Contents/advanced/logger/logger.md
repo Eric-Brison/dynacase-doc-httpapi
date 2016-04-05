@@ -1,18 +1,18 @@
-# Log {#rest:da3b8415-1789-4d9a-9186-c2e97985d3c4}
+# Log {#httpapi-ref:da3b8415-1789-4d9a-9186-c2e97985d3c4}
 
 L'API REST possède un système de logging permettant de logger les cas d'erreur (accès à des ressources inexistantes,
 erreur PHP, erreur documentaire, etc.)
 
-## Système de log par défaut {#rest:21b1b002-97fb-4159-bb52-b89f9b973aae}
+## Système de log par défaut {#httpapi-ref:21b1b002-97fb-4159-bb52-b89f9b973aae}
 
 Par défaut le système de log utilise [la classe de log][core_log] de Dynacase et les logs sont enregistrés à chaque
 erreur et envoyés dans syslog.
 
-## Ajout d'un système de log tiers {#rest:40296f2c-7ba1-4aae-8dd8-2c72b6c4eced}
+## Ajout d'un système de log tiers {#httpapi-ref:40296f2c-7ba1-4aae-8dd8-2c72b6c4eced}
 
 Il est possible d'ajouter un système de log tiers (mail, outil de supervision, etc.) Il y a deux étapes à suivre  :
 
-### Création d'une classe de Log {#rest:94138d08-9c26-4d55-8637-f281620f36da}
+### Création d'une classe de Log {#httpapi-ref:94138d08-9c26-4d55-8637-f281620f36da}
 
 Il faut réer une classe qui hérite de classe abstraite de log de l'API `\Dcp\HttpApi\V1\Logger\Logger`.
 
@@ -61,7 +61,7 @@ dans error.log de Apache.
 
 La classe ci-dessus log les erreurs de type `Warning` et `Erreur` et ignore les `Message`.
 
-### Enregistrement de la classe de log {#rest:f87a6aed-fd61-4f26-83bd-b26a5f8cca85}
+### Enregistrement de la classe de log {#httpapi-ref:f87a6aed-fd61-4f26-83bd-b26a5f8cca85}
 
 La nouvelle classe de log doit ensuite être enregistrée auprès de l'application `HTTPAPI_V1`, ceci se fait via le
 paramètre applicatif `CUSTOM_LOGGER`.

@@ -1,20 +1,20 @@
-# Valeurs possibles d'un attribut énuméré  {#rest:bb13e401-1859-4c73-b299-70b801ed7eb0}
+# Valeurs possibles d'un attribut énuméré  {#httpapi-ref:bb13e401-1859-4c73-b299-70b801ed7eb0}
 
-## URL {#rest:e7530c89-82d0-4888-9d1e-3b354476928f}
+## URL {#httpapi-ref:e7530c89-82d0-4888-9d1e-3b354476928f}
 
     GET /api/v1/families/<famName>/enumerates/<attrid>
 
 Récupération des valeurs de l'énuméré de l'attribut `attrid` et de la famille `famName`.
 
-## Content {#rest:d10aa78c-e870-4504-b566-c7f53e137e1a}
+## Content {#httpapi-ref:d10aa78c-e870-4504-b566-c7f53e137e1a}
 
 Le contenu de la requête est vide.
 
-## Structure de retour {#rest:0fd3954e-3cb5-46d7-b96f-8dd33b44fa5f}
+## Structure de retour {#httpapi-ref:0fd3954e-3cb5-46d7-b96f-8dd33b44fa5f}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:d562ebc3-3b03-4b6b-a471-855a04a821ba}
+### En cas de réussite : {#httpapi-ref:d562ebc3-3b03-4b6b-a471-855a04a821ba}
 
 La partie `data` contient 3 champs :
 
@@ -72,7 +72,7 @@ Exemple :
         }
     }
 
-### En cas d'échec {#rest:704f567e-eb1c-4800-bc03-e9076b2fb849}
+### En cas d'échec {#httpapi-ref:704f567e-eb1c-4800-bc03-e9076b2fb849}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -102,7 +102,7 @@ Cas d'erreur de en cas d'attribut non énuméré
         "exceptionMessage" : "Attribute \"an_tatouage\" is not an enum (type \"int\") in family \"ZOO_ANIMAL\""
     }
 
-## Résultat partiel {#rest:2b3c2de1-4a64-4d07-98b5-ad89f148be3e}
+## Résultat partiel {#httpapi-ref:2b3c2de1-4a64-4d07-98b5-ad89f148be3e}
 
 L'attribut peut être retourné avec plus ou moins d'items.
 

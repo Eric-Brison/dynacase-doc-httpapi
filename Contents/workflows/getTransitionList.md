@@ -1,5 +1,5 @@
-# Récupérer la liste des transitions {#rest:a91dc2b7-3248-452a-b51e-3f660d7d3cf2}
-## URL   {#rest:665eef6e-57e7-4fe8-bcf2-60181798ea09}
+# Récupérer la liste des transitions {#httpapi-ref:a91dc2b7-3248-452a-b51e-3f660d7d3cf2}
+## URL   {#httpapi-ref:665eef6e-57e7-4fe8-bcf2-60181798ea09}
 
 
     GET /api/v1/documents/<documentId>/workflows/transitions/
@@ -13,15 +13,15 @@ Exemple :
 
 
 
-## Content   {#rest:f8e43000-eb22-4335-bb72-209dd77efc5a}
+## Content   {#httpapi-ref:f8e43000-eb22-4335-bb72-209dd77efc5a}
 
 Le contenu de la requête est vide.
 
-## Structure de retour   {#rest:66df5b76-2deb-40e3-b33b-7ef62f8c0bbd}
+## Structure de retour   {#httpapi-ref:66df5b76-2deb-40e3-b33b-7ef62f8c0bbd}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite :   {#rest:60ed408f-3e8c-4f01-8e1e-de04f54b8a71}
+### En cas de réussite :   {#httpapi-ref:60ed408f-3e8c-4f01-8e1e-de04f54b8a71}
 
 La partie `data` contient :
 
@@ -71,7 +71,7 @@ Exemple :
     }
 
 
-### En cas d'échec   {#rest:4fe84ef0-fc99-44f3-8650-5d8f07ea1e08}
+### En cas d'échec   {#httpapi-ref:4fe84ef0-fc99-44f3-8650-5d8f07ea1e08}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 

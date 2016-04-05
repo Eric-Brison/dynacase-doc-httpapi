@@ -1,12 +1,12 @@
-# Recherche {#rest:d65c99b2-7f57-478a-9f76-bcc33aa6bea8}
+# Recherche {#httpapi-ref:d65c99b2-7f57-478a-9f76-bcc33aa6bea8}
 
 Cette collection décrit les recherches de Dynacase.
 
-## URL {#rest:bcc4ab0b-a9d3-43c4-adc2-2ceb7ab2689e}
+## URL {#httpapi-ref:bcc4ab0b-a9d3-43c4-adc2-2ceb7ab2689e}
 
 L'url d'accès est : `/api/v1/searches`
 
-## Méthodes {#rest:b23f5636-f2e4-4b5d-99d1-0ca90a03ca9c}
+## Méthodes {#httpapi-ref:b23f5636-f2e4-4b5d-99d1-0ca90a03ca9c}
 
 La collection searches implémente les éléments suivants :
 
@@ -34,5 +34,5 @@ recherche passe par l'utilisation de l'entrée `families/SEARCH/documents/`. De 
 
 <!-- links -->
 [core_search]: ../../../dynacase-doc-core-reference/website/book//core-ref:bda916b0-e564-40fd-b195-c62bbab7b8be.html
-[searches_collection]: #rest:9b8f4a2b-3f56-4b21-a7b7-bb299b4ac7b3
-[searches_content]: #rest:b7fb15e0-6e51-4ace-8a5f-aec7d565e24d
+[searches_collection]: #httpapi-ref:9b8f4a2b-3f56-4b21-a7b7-bb299b4ac7b3
+[searches_content]: #httpapi-ref:b7fb15e0-6e51-4ace-8a5f-aec7d565e24d

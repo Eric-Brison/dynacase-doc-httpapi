@@ -1,5 +1,5 @@
-# Liste des tags utilisateur {#rest:4d01fe57-4cd9-4989-adb8-f088762e4236}
-## URL  {#rest:a88fa744-48a3-4992-8358-234d90a0f17f}
+# Liste des tags utilisateur {#httpapi-ref:4d01fe57-4cd9-4989-adb8-f088762e4236}
+## URL  {#httpapi-ref:a88fa744-48a3-4992-8358-234d90a0f17f}
 
     GET /api/v1/documents/<documentId>/usertags/
 
@@ -10,15 +10,15 @@ Exemple :
     GET /api/v1/documents/my_document/usertags/
 
 
-## Content  {#rest:a76c5cd9-78cc-4eac-8d35-b21a129ff00d}
+## Content  {#httpapi-ref:a76c5cd9-78cc-4eac-8d35-b21a129ff00d}
 
 Le contenu de la requête est vide.
 
-## Structure de retour  {#rest:4c15c888-e309-41f9-8ad2-fb6d74561165}
+## Structure de retour  {#httpapi-ref:4c15c888-e309-41f9-8ad2-fb6d74561165}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite :  {#rest:7b516188-fbc9-42cd-ab9f-9adb563e9aa2}
+### En cas de réussite :  {#httpapi-ref:7b516188-fbc9-42cd-ab9f-9adb563e9aa2}
 
 La partie `data` contient :
 
@@ -71,7 +71,7 @@ Exemple :
     }
 
 
-### En cas d'échec  {#rest:676e02f2-4c53-4c76-87ae-96e0d46544ca}
+### En cas d'échec  {#httpapi-ref:676e02f2-4c53-4c76-87ae-96e0d46544ca}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -103,7 +103,7 @@ Cas d'erreur de privilège
 
 
 
-## Pagination et tri {#rest:f0e8341c-e6a9-4643-93ab-66687d501f4b}
+## Pagination et tri {#httpapi-ref:f0e8341c-e6a9-4643-93ab-66687d501f4b}
 
 
 La liste des tags utilisateur est paginée et ordonnée.

@@ -1,20 +1,20 @@
-# Consultation du contenu d'une recherche {#rest:b7fb15e0-6e51-4ace-8a5f-aec7d565e24d}
+# Consultation du contenu d'une recherche {#httpapi-ref:b7fb15e0-6e51-4ace-8a5f-aec7d565e24d}
 
-## URL canonique {#rest:2e662769-63e0-42b5-acf4-fb26e039a775}
+## URL canonique {#httpapi-ref:2e662769-63e0-42b5-acf4-fb26e039a775}
 
     GET /api/v1/searches/<searchId>/documents/
 
 Récupération de la liste des documents trouvés par la recherche `<searchId>`.
 
-## Content {#rest:6ca763df-432e-4d8f-a14f-68559cc6f705}
+## Content {#httpapi-ref:6ca763df-432e-4d8f-a14f-68559cc6f705}
 
 Le contenu de la requête est vide.
 
-## Structure de retour {#rest:beb23765-7d41-48c8-92f3-f4b6769e8a3e}
+## Structure de retour {#httpapi-ref:beb23765-7d41-48c8-92f3-f4b6769e8a3e}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:9efd746f-b036-4e02-8c02-a1c49084ff53}
+### En cas de réussite : {#httpapi-ref:9efd746f-b036-4e02-8c02-a1c49084ff53}
 
 La partie `data` contient :
 
@@ -67,7 +67,7 @@ Exemple :
 <span class="flag inline nota-bene"></span> Les valeurs retournées correspondent aux valeurs de la vue de consultation
 par défaut.
 
-### En cas d'échec {#rest:7e9e5f6b-068d-445c-8bbd-6d64d8314587}
+### En cas d'échec {#httpapi-ref:7e9e5f6b-068d-445c-8bbd-6d64d8314587}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -77,9 +77,9 @@ Les raisons d'échecs spécifiques à cette requête sont
 | Attribut ou propriété d'orderBy invalide                        |         400 | CRUD0502   |
 | L'identifiant de la recherche ne correspond pas à une recherche |         400 | CRUD0503   |
 
-## Résultat partiel {#rest:75a948b3-b1bb-43ec-bb3b-2e4a77671ef2}
+## Résultat partiel {#httpapi-ref:75a948b3-b1bb-43ec-bb3b-2e4a77671ef2}
 
-### Pagination et tri {#rest:67bf8b79-c5a5-4b82-b923-a1c5ed78c69c}
+### Pagination et tri {#httpapi-ref:67bf8b79-c5a5-4b82-b923-a1c5ed78c69c}
 
 La liste des documents peut être paginée et ordonnée.
 
@@ -102,7 +102,7 @@ Exemple :
 
 * GET `/searches/<my_search>/?orderBy=title:asc,id:desc&slice=100&offset=20`
 
-### Informations retournées {#rest:d9d12fa3-bbea-49cb-bc86-0c730f0d73eb}
+### Informations retournées {#httpapi-ref:d9d12fa3-bbea-49cb-bc86-0c730f0d73eb}
 
 Les documents peuvent être retournés avec plus ou moins d'information.
 
@@ -124,7 +124,7 @@ Par défaut : `fields=document.properties`
 
 La liste des propriétés est documentée dans la [documentation de format collection][properties].
 
-## Cache {#rest:716b4215-feec-4325-b54d-8969144cf224}
+## Cache {#httpapi-ref:716b4215-feec-4325-b54d-8969144cf224}
 
 La collection n'a pas de cache.
 

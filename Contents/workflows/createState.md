@@ -1,5 +1,5 @@
-# Changer d'état {#rest:f3d33034-af23-48c6-b535-e609266e5bc5}
-## URL   {#rest:813c71bc-ea7c-409f-8aa6-bcf30d4562f5}
+# Changer d'état {#httpapi-ref:f3d33034-af23-48c6-b535-e609266e5bc5}
+## URL   {#httpapi-ref:813c71bc-ea7c-409f-8aa6-bcf30d4562f5}
 
     POST /api/v1/documents/<documentId>/workflows/states/<stateid>
 
@@ -14,7 +14,7 @@ Exemple :
     POST /api/v1/documents/<documentId>/workflows/states/<stateid>
 
 
-## Content   {#rest:3c3b8a7f-5a04-49ea-865d-52843c4cfa83}
+## Content   {#httpapi-ref:3c3b8a7f-5a04-49ea-865d-52843c4cfa83}
 
 Le contenu est une structure JSON qui comprend les informations suivantes :
 
@@ -32,11 +32,11 @@ Exemple :
         }
     }
 
-## Structure de retour   {#rest:ab04da0d-9c5a-4153-9754-98b76bce43a0}
+## Structure de retour   {#httpapi-ref:ab04da0d-9c5a-4153-9754-98b76bce43a0}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite :   {#rest:ff5a6973-46de-4c99-b3fa-a77f986d8b21}
+### En cas de réussite :   {#httpapi-ref:ff5a6973-46de-4c99-b3fa-a77f986d8b21}
 
 La partie `data` contient :
 
@@ -78,7 +78,7 @@ Exemple :
     }
 
 
-### En cas d'échec   {#rest:558861bc-14e5-4849-816b-cdbfe9a892ce}
+### En cas d'échec   {#httpapi-ref:558861bc-14e5-4849-816b-cdbfe9a892ce}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 

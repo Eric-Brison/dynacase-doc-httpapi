@@ -1,6 +1,6 @@
-# Consultation de la liste des révisions d'un document {#rest:2dd5afbe-1d3d-4830-8241-c93077d88430}
+# Consultation de la liste des révisions d'un document {#httpapi-ref:2dd5afbe-1d3d-4830-8241-c93077d88430}
 
-## URL {#rest:4665a788-c584-4805-b638-3b40c33c281d}
+## URL {#httpapi-ref:4665a788-c584-4805-b638-3b40c33c281d}
 
     GET /api/v1/documents/<documentId>/revisions/
 
@@ -8,15 +8,15 @@ Récupération de la liste des révisions du document `<documentId>`.
 
 L'identifiant du document peut être son nom logique, son identifiant numérique.
 
-## Content {#rest:91384551-3ae9-4d97-8c70-0c81ab64bdfa}
+## Content {#httpapi-ref:91384551-3ae9-4d97-8c70-0c81ab64bdfa}
 
 Le contenu de la requête est vide.
 
-## Structure de retour {#rest:d9f3ca39-11e2-4131-966a-034352f34ca7}
+## Structure de retour {#httpapi-ref:d9f3ca39-11e2-4131-966a-034352f34ca7}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:e5b9222e-c8ef-433b-91fc-45efc59575a3}
+### En cas de réussite : {#httpapi-ref:e5b9222e-c8ef-433b-91fc-45efc59575a3}
 
 La partie `data` contient :
 
@@ -85,7 +85,7 @@ Exemple :
         }
     }
 
-### En cas d'échec {#rest:5bfa051d-e3a4-4263-8589-f392a1257e2d}
+### En cas d'échec {#httpapi-ref:5bfa051d-e3a4-4263-8589-f392a1257e2d}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -113,7 +113,7 @@ Cas d'erreur de document non trouvé
         "exceptionMessage" : "Document \"1200\" not found"
     }
 
-## Cache {#rest:8d9d9dee-4e67-4881-aa4c-b490be94505e}
+## Cache {#httpapi-ref:8d9d9dee-4e67-4881-aa4c-b490be94505e}
 
 Dans le cadre du [cache][cache], le `Etag` est calculé à l'aide des éléments suivants :
 
@@ -127,7 +127,7 @@ L'ensemble de ces éléments sont concaténés et ensuite le [sha1][sha1] de cet
 concaténation consitue le `Etag`.
 
 
-## Autres URL d'accès {#rest:1bbf4922-a12f-4cc4-8aa0-16853148ac14}
+## Autres URL d'accès {#httpapi-ref:95660f6b-2551-44bd-a925-169e99332a7a}
 
 Vous pouvez aussi accéder à cette ressources via :
 
@@ -147,6 +147,6 @@ erreur 404 (ressource non trouvée) est retournée.
 
     GET /api/v1/trash/<documentId>/revisions/
 
-[trash]: #rest:52be10c1-9f46-456b-a22f-24909386567
-[cache]: #rest:804f8d68-acfa-4a35-bb41-27b2a27c14dc
+[trash]: #httpapi-ref:52be10c1-9f46-456b-a22f-24909386567
+[cache]: #httpapi-ref:804f8d68-acfa-4a35-bb41-27b2a27c14dc
 [sha1]: https://fr.wikipedia.org/wiki/SHA-1

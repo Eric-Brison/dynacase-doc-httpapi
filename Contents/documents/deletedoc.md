@@ -1,6 +1,6 @@
-# Suppression d'un document  {#rest:3358b3bd-bdf6-44ef-b1d7-438f8eb21067}
+# Suppression d'un document  {#httpapi-ref:3358b3bd-bdf6-44ef-b1d7-438f8eb21067}
 
-## URL {#rest:f992edec-ca5c-4fa1-b829-f88d9e17347d}
+## URL {#httpapi-ref:f992edec-ca5c-4fa1-b829-f88d9e17347d}
 
     DELETE /api/v1/documents/<id>
 
@@ -20,15 +20,15 @@ révisions.
 
 La suppression "physique" (réelle suppression de la ligne en base de données) n'est pas possible.
 
-## Content {#rest:dd7728aa-309c-42f1-a496-9172a929be9f}
+## Content {#httpapi-ref:dd7728aa-309c-42f1-a496-9172a929be9f}
 
 Le contenu de la requête est vide.
 
-## Structure de retour {#rest:70a8207a-abd0-498c-b788-48b86a274c3a}
+## Structure de retour {#httpapi-ref:70a8207a-abd0-498c-b788-48b86a274c3a}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:305ab52d-2313-4594-b524-736875acd1b6}
+### En cas de réussite : {#httpapi-ref:305ab52d-2313-4594-b524-736875acd1b6}
 
 La partie `data` contient 3 champs :
 
@@ -65,7 +65,7 @@ Exemple :
 
 La liste des propriétés est documentée dans la [documentation de format collection][properties].
 
-### En cas d'échec {#rest:0e94bbdd-2051-436e-af38-fe718a1e87ee}
+### En cas d'échec {#httpapi-ref:0e94bbdd-2051-436e-af38-fe718a1e87ee}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -95,7 +95,7 @@ Cas d'erreur de privilège
         "exceptionMessage" : "Document \"1057\" deleted"
     }
 
-## Autres URL d'accès {#rest:68c41d29-93e9-45a3-82c2-20858d2d3a04}
+## Autres URL d'accès {#httpapi-ref:68c41d29-93e9-45a3-82c2-20858d2d3a04}
 
 Vous pouvez aussi accéder à cette ressources via :
 

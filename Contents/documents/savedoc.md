@@ -1,6 +1,6 @@
-# Modification d'un document  {#rest:db2cb01a-7325-4f78-8cec-ceac9858caf2}
+# Modification d'un document  {#httpapi-ref:db2cb01a-7325-4f78-8cec-ceac9858caf2}
 
-## URL {#rest:bf50f601-f8ba-432d-91b1-e39f53fcf977}
+## URL {#httpapi-ref:bf50f601-f8ba-432d-91b1-e39f53fcf977}
 
     PUT /api/v1/documents/<id>
 
@@ -17,9 +17,9 @@ Exemple :
 L'identifiant numérique peut référencer n'importe quelle révision du document. 
 Dans tous les cas, la modification porte sur la dernière révision du document.
 
-## Content {#rest:16f7728f-6635-4503-b762-99229fd48558}
+## Content {#httpapi-ref:16f7728f-6635-4503-b762-99229fd48558}
 
-### Format JSON {#rest:ecb81339-565d-4c78-860f-a4b1b64f8984}
+### Format JSON {#httpapi-ref:ecb81339-565d-4c78-860f-a4b1b64f8984}
 
 Le contenu de la requête doit contenir une donnée JSON avec la liste des attributs modifiés.
 
@@ -52,7 +52,7 @@ Exemple :
 
 Note : Toute donnée additionnelle sera ignorée.
 
-### Format urlEncoded {#rest:215c250f-7ddb-429b-b692-7083c5bc8bc1}
+### Format urlEncoded {#httpapi-ref:215c250f-7ddb-429b-b692-7083c5bc8bc1}
 
 Le contenu de la requête contient la liste des valeurs d'attributs à enregistrer.
 Chaque variable (PUT) est le nom de l'attribut (casse insensible).
@@ -63,11 +63,11 @@ Note : Ce format peut être utilisé directement depuis un formulaire HTML.
 
 Cette forme permet aussi d'enregistrer des fichiers dans le document.
 
-## Structure de retour {#rest:4919fce0-5933-4701-9d0c-d8f61fa089f3}
+## Structure de retour {#httpapi-ref:4919fce0-5933-4701-9d0c-d8f61fa089f3}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:579e3219-f71f-4c20-a0a7-38a0c938dd49}
+### En cas de réussite : {#httpapi-ref:579e3219-f71f-4c20-a0a7-38a0c938dd49}
 
 La partie `data` contient 3 champs :
 
@@ -99,7 +99,7 @@ Exemple :
 
 La liste des propriétés est documentée dans la [documentation de format collection][properties].
 
-### En cas d'échec {#rest:dd6d10d7-7654-446f-80af-34c51b424291}
+### En cas d'échec {#httpapi-ref:dd6d10d7-7654-446f-80af-34c51b424291}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -132,7 +132,7 @@ Cas d'erreur de privilège
         "exceptionMessage" : "Document \"1057\" access deny : Pas de privil\u00e8ge edit pour le document Hello world [1057]"
     }
 
-## Autres URL d'accès {#rest:8c761d0c-1578-443f-8572-2c3b34894330}
+## Autres URL d'accès {#httpapi-ref:8c761d0c-1578-443f-8572-2c3b34894330}
 
 Vous pouvez aussi accéder à cette ressources via :
 

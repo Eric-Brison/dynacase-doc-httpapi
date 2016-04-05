@@ -1,6 +1,6 @@
-# Consultation d'un document supprimé  {#rest:52be10c1-9f46-456b-a22f-24909386567f}
+# Consultation d'un document supprimé  {#httpapi-ref:52be10c1-9f46-456b-a22f-24909386567f}
 
-## URL {#rest:074c3c3f-e25e-418b-9030-a6d77f986731}
+## URL {#httpapi-ref:074c3c3f-e25e-418b-9030-a6d77f986731}
 
 Récupération d'un document du trash.
 
@@ -16,15 +16,15 @@ Exemple :
 
 L'identifiant du document peut être son nom logique, son identifiant numérique.
 
-## Content {#rest:4f2315f1-9696-4843-804d-ff8f135193f0}
+## Content {#httpapi-ref:4f2315f1-9696-4843-804d-ff8f135193f0}
 
 Le contenu de la requête est vide.
 
-## Structure de retour {#rest:1e75875d-514f-477b-84ac-f9e45027aa16}
+## Structure de retour {#httpapi-ref:1e75875d-514f-477b-84ac-f9e45027aa16}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:1a845c54-6c3a-4d61-9996-43a5979b7819}
+### En cas de réussite : {#httpapi-ref:1a845c54-6c3a-4d61-9996-43a5979b7819}
 
 La partie `data` contient 3 champs :
 
@@ -57,7 +57,7 @@ Exemple :
         }
     }
 
-### En cas d'échec {#rest:0de77a4f-f138-432f-b8a4-c3ec8d5b982c}
+### En cas d'échec {#httpapi-ref:0de77a4f-f138-432f-b8a4-c3ec8d5b982c}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -89,7 +89,7 @@ Cas d'erreur de document non trouvé
         "exceptionMessage" : "Document \"1200\" not found"
     }
 
-## Résultat partiel {#rest:e641eb3e-8540-47bf-b124-ba1be648d39f}
+## Résultat partiel {#httpapi-ref:e641eb3e-8540-47bf-b124-ba1be648d39f}
 
 Le document peut être retourné avec plus ou moins d'information.
 

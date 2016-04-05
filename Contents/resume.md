@@ -1,6 +1,6 @@
-# Résumé de l'API {#rest:39742615-6b36-4b23-8449-3a9019b9afa8}
+# Résumé de l'API {#httpapi-ref:39742615-6b36-4b23-8449-3a9019b9afa8}
 
-## Carte de l'api {#rest:cf8c475b-1ea5-474d-bc74-f5902f9d00fb}
+## Carte de l'api {#httpapi-ref:cf8c475b-1ea5-474d-bc74-f5902f9d00fb}
 
 |  Type  |                                      URL                                      |    Implanté    |                            Signification                             |
 | ------ | ----------------------------------------------------------------------------- | -------------- | -------------------------------------------------------------------- |
@@ -160,35 +160,35 @@ mais non présentes dans la version courante de l'API.
 
 <!--links-->
 
-[get_usertag_list]:     #rest:4d01fe57-4cd9-4989-adb8-f088762e4236
-[get_usertag]:          #rest:1ecfb964-e7ff-4adc-b874-f6887b800fc5
-[post_usertag]:         #rest:8f415def-6741-49a9-b0dd-fb7824c648be
-[put_usertag]:          #rest:bcca7517-ecff-4e8a-8339-e8defa71bc4c
-[delete_usertag]:       #rest:433d5c93-a890-4da2-b0a9-3e4089c14d3d
+[get_usertag_list]:     #httpapi-ref:4d01fe57-4cd9-4989-adb8-f088762e4236
+[get_usertag]:          #httpapi-ref:1ecfb964-e7ff-4adc-b874-f6887b800fc5
+[post_usertag]:         #httpapi-ref:8f415def-6741-49a9-b0dd-fb7824c648be
+[put_usertag]:          #httpapi-ref:bcca7517-ecff-4e8a-8339-e8defa71bc4c
+[delete_usertag]:       #httpapi-ref:433d5c93-a890-4da2-b0a9-3e4089c14d3d
 
-[GET_FAM]: #rest:6b195156-0cda-47c8-9a9a-04ec13562c9a
-[POSTDOC]: #rest:e769b476-0033-407c-b453-4e8466e09975
-[GETDOC]: #rest:1d7b939f-d5fc-4b57-b33f-d216913efc22
-[PUTDOC]: #rest:db2cb01a-7325-4f78-8cec-ceac9858caf2
-[DELDOC]: #rest:3358b3bd-bdf6-44ef-b1d7-438f8eb21067
+[GET_FAM]: #httpapi-ref:6b195156-0cda-47c8-9a9a-04ec13562c9a
+[POSTDOC]: #httpapi-ref:e769b476-0033-407c-b453-4e8466e09975
+[GETDOC]: #httpapi-ref:1d7b939f-d5fc-4b57-b33f-d216913efc22
+[PUTDOC]: #httpapi-ref:db2cb01a-7325-4f78-8cec-ceac9858caf2
+[DELDOC]: #httpapi-ref:3358b3bd-bdf6-44ef-b1d7-438f8eb21067
 
-[POSTFILE]: #rest:5797255d-128d-4aa4-9c11-2c8195cca63d
-[trash_doc]: #rest:52be10c1-9f46-456b-a22f-24909386567f
-[get_enum]: #rest:bb13e401-1859-4c73-b299-70b801ed7eb0
-[get_histo]: #rest:9ae75dac-8eb5-4fa9-a608-7313b90fe33c
-[list_revision]: #rest:2dd5afbe-1d3d-4830-8241-c93077d88430
-[get_revision]: #rest:eb7b6954-0945-4f02-8e10-16e69729c529
-[get_enum_list]: #rest:69fba1cf-5754-4189-ac07-c16f348e7fda
-[get_documents]: #rest:2ee6dd78-5b5a-4e00-aba5-4cd85c8a1cdc
-[get_trash]: #rest:4052b9db-d36c-4535-809f-1fad107e8270
-[searches_collection]: #rest:9b8f4a2b-3f56-4b21-a7b7-bb299b4ac7b3
-[searches_content]: #rest:b7fb15e0-6e51-4ace-8a5f-aec7d565e24d
-[folders_collection]: #rest:b3f83d12-4ea7-44e2-8509-1145d05003d6
-[folders_content]: #rest:f3e3869b-4dcf-40ee-9733-3f4b57e2386f
-[fam_list_document]: #rest:f21d3f3f-82ea-48a9-bb9e-ba986bae9b62
-[get_states]:       #rest:af743cfe-c089-4706-a5fb-a131f68020d2
-[get_transitions]:  #rest:a91dc2b7-3248-452a-b51e-3f660d7d3cf2
-[get_state]:        #rest:89142988-9b2b-42f6-af33-f68749c7af35
-[create_state]:     #rest:f3d33034-af23-48c6-b535-e609266e5bc5
-[get_transition]:   #rest:d370f800-2a17-4589-90ae-d505b5f71c71
-[create_transition]:#rest:697b7714-d986-4ae5-8020-a5602cfbe7d5
+[POSTFILE]: #httpapi-ref:5797255d-128d-4aa4-9c11-2c8195cca63d
+[trash_doc]: #httpapi-ref:52be10c1-9f46-456b-a22f-24909386567f
+[get_enum]: #httpapi-ref:bb13e401-1859-4c73-b299-70b801ed7eb0
+[get_histo]: #httpapi-ref:9ae75dac-8eb5-4fa9-a608-7313b90fe33c
+[list_revision]: #httpapi-ref:2dd5afbe-1d3d-4830-8241-c93077d88430
+[get_revision]: #httpapi-ref:eb7b6954-0945-4f02-8e10-16e69729c529
+[get_enum_list]: #httpapi-ref:69fba1cf-5754-4189-ac07-c16f348e7fda
+[get_documents]: #httpapi-ref:2ee6dd78-5b5a-4e00-aba5-4cd85c8a1cdc
+[get_trash]: #httpapi-ref:4052b9db-d36c-4535-809f-1fad107e8270
+[searches_collection]: #httpapi-ref:9b8f4a2b-3f56-4b21-a7b7-bb299b4ac7b3
+[searches_content]: #httpapi-ref:b7fb15e0-6e51-4ace-8a5f-aec7d565e24d
+[folders_collection]: #httpapi-ref:b3f83d12-4ea7-44e2-8509-1145d05003d6
+[folders_content]: #httpapi-ref:f3e3869b-4dcf-40ee-9733-3f4b57e2386f
+[fam_list_document]: #httpapi-ref:f21d3f3f-82ea-48a9-bb9e-ba986bae9b62
+[get_states]:       #httpapi-ref:af743cfe-c089-4706-a5fb-a131f68020d2
+[get_transitions]:  #httpapi-ref:a91dc2b7-3248-452a-b51e-3f660d7d3cf2
+[get_state]:        #httpapi-ref:89142988-9b2b-42f6-af33-f68749c7af35
+[create_state]:     #httpapi-ref:f3d33034-af23-48c6-b535-e609266e5bc5
+[get_transition]:   #httpapi-ref:d370f800-2a17-4589-90ae-d505b5f71c71
+[create_transition]:#httpapi-ref:697b7714-d986-4ae5-8020-a5602cfbe7d5

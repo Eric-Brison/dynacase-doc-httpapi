@@ -1,20 +1,20 @@
-# Consultation des documents de la familles {#rest:f21d3f3f-82ea-48a9-bb9e-ba986bae9b62}
+# Consultation des documents de la familles {#httpapi-ref:f21d3f3f-82ea-48a9-bb9e-ba986bae9b62}
 
-## URL canonique {#rest:2967f00f-d472-44fc-8bb8-e5cb1187efe9}
+## URL canonique {#httpapi-ref:2967f00f-d472-44fc-8bb8-e5cb1187efe9}
 
     GET /api/v1/families/<famName>/documents/
 
 Récupération de la liste des documents de la famille `families` présents sur la plateforme.
 
-## Content {#rest:1478e0ce-931d-45c6-b62a-c85a6d676391}
+## Content {#httpapi-ref:1478e0ce-931d-45c6-b62a-c85a6d676391}
 
 Le contenu de la requête est vide.
 
-## Structure de retour {#rest:0e5220e6-0b3a-4c81-8947-bff9ebbb8d61}
+## Structure de retour {#httpapi-ref:0e5220e6-0b3a-4c81-8947-bff9ebbb8d61}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:ddec0249-b31b-4004-909a-0347370ad3ce}
+### En cas de réussite : {#httpapi-ref:ddec0249-b31b-4004-909a-0347370ad3ce}
 
 La partie `data` contient :
 
@@ -76,7 +76,7 @@ Exemple :
 <span class="flag inline nota-bene"></span> Les valeurs retournées correspondent aux valeurs de la vue de consultation
 par défaut.
 
-### En cas d'échec {#rest:27f3e1f4-282e-40a7-bf3c-7d9c8f3284fb}
+### En cas d'échec {#httpapi-ref:27f3e1f4-282e-40a7-bf3c-7d9c8f3284fb}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -85,9 +85,9 @@ Les raisons d'échecs spécifiques à cette requête sont
 | Sens de l'orderBy inconnu                      |         400 | CRUD0501   |
 | Attribut ou propriété d'orderBy invalide       |         400 | CRUD0502   |
 
-## Résultat partiel {#rest:aa550b99-3d9b-4ce9-a5a7-e5e6c794a8f1}
+## Résultat partiel {#httpapi-ref:aa550b99-3d9b-4ce9-a5a7-e5e6c794a8f1}
 
-### Pagination et tri {#rest:c1f59c59-0edc-4bae-9149-ccba71f39a50}
+### Pagination et tri {#httpapi-ref:c1f59c59-0edc-4bae-9149-ccba71f39a50}
 
 La liste des documents peut être paginée et ordonnée.
 
@@ -110,7 +110,7 @@ Exemple :
 
 * GET `families/<famName>/documents/?orderBy=title:asc,id:desc&slice=100&offset=20`
 
-### Informations retournées {#rest:8bcaf080-db65-46d2-b1b9-9c1f7ba82f6f}
+### Informations retournées {#httpapi-ref:8bcaf080-db65-46d2-b1b9-9c1f7ba82f6f}
 
 Les documents peuvent être retournés avec plus ou moins d'information.
 
@@ -129,7 +129,7 @@ Par défaut : `fields=document.properties`
 
 La liste des propriétés est documentée dans la [documentation de format collection][properties].
 
-## Cache {#rest:6128563b-6ad9-4bf0-941d-df876c017e4a}
+## Cache {#httpapi-ref:6128563b-6ad9-4bf0-941d-df876c017e4a}
 
 La collection n'a pas de cache.
 

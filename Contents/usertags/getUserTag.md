@@ -1,5 +1,5 @@
-# Récupérer un tag utilisateur {#rest:1ecfb964-e7ff-4adc-b874-f6887b800fc5}
-## URL  {#rest:f96d663a-7366-43ea-bae6-be915748d428}
+# Récupérer un tag utilisateur {#httpapi-ref:1ecfb964-e7ff-4adc-b874-f6887b800fc5}
+## URL  {#httpapi-ref:f96d663a-7366-43ea-bae6-be915748d428}
 
     GET /api/v1/documents/<documentId>/usertags/<tagid>
 
@@ -10,15 +10,15 @@ Exemple :
     GET /api/v1/documents/my_document/usertags/my_custom
 
 
-## Content  {#rest:46755c22-9dab-45e6-b59d-b8b7103111c6}
+## Content  {#httpapi-ref:46755c22-9dab-45e6-b59d-b8b7103111c6}
 
 Le contenu de la requête est vide.
 
-## Structure de retour  {#rest:6c4456cd-d004-4b35-8f51-9d11e480e375}
+## Structure de retour  {#httpapi-ref:6c4456cd-d004-4b35-8f51-9d11e480e375}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite :  {#rest:972158ec-40bc-42dd-8d59-8efa33a25b8b}
+### En cas de réussite :  {#httpapi-ref:972158ec-40bc-42dd-8d59-8efa33a25b8b}
 
 La partie `data` contient 2 champs :
 
@@ -51,7 +51,7 @@ Exemple :
     }
 
 
-### En cas d'échec  {#rest:0c5478e7-294e-411f-b70e-57ce91408c3c}
+### En cas d'échec  {#httpapi-ref:0c5478e7-294e-411f-b70e-57ce91408c3c}
 Les raisons d'échecs spécifiques à cette requête sont 
 
 

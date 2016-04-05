@@ -1,21 +1,21 @@
-# Consultation des messages d'historique {#rest:9ae75dac-8eb5-4fa9-a608-7313b90fe33c}
+# Consultation des messages d'historique {#httpapi-ref:9ae75dac-8eb5-4fa9-a608-7313b90fe33c}
 
-## URL  {#rest:24535176-2898-4d2b-8d54-57caf7efc7f1}
+## URL  {#httpapi-ref:24535176-2898-4d2b-8d54-57caf7efc7f1}
 
     GET /api/v1/documents/<documentId>/history/
 
 Récupération de l'historique du document ayant
 l'identifiant `<documentId>`.
 
-## Content  {#rest:a3c6ab8a-a46f-4afc-8f9d-7066d7d141c1}
+## Content  {#httpapi-ref:a3c6ab8a-a46f-4afc-8f9d-7066d7d141c1}
 
 Le contenu de la requête est vide.
 
-## Structure de retour  {#rest:e8d2e341-2cbe-4009-ad97-8a0b07245b09}
+## Structure de retour  {#httpapi-ref:e8d2e341-2cbe-4009-ad97-8a0b07245b09}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite :  {#rest:0c60cc1d-4fe7-45fa-b655-980c6c673167}
+### En cas de réussite :  {#httpapi-ref:0c60cc1d-4fe7-45fa-b655-980c6c673167}
     
 La partie `data` contient les éléments suivants :
 
@@ -192,7 +192,7 @@ Exemple :
         }
     }
 
-### En cas d'échec  {#rest:b32007bd-500e-46ca-8734-85af9be2ccc0}
+### En cas d'échec  {#httpapi-ref:b32007bd-500e-46ca-8734-85af9be2ccc0}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -231,9 +231,9 @@ Cas d'erreur en cas de document non trouvé
     }
 
 
-## Filtres  {#rest:a882873e-dcb1-4866-a7dc-2de45a15aa00}
+## Filtres  {#httpapi-ref:a882873e-dcb1-4866-a7dc-2de45a15aa00}
 
-### Slice {#rest:83a97e3c-cd8b-4fdf-8332-c35f54674cde}
+### Slice {#httpapi-ref:83a97e3c-cd8b-4fdf-8332-c35f54674cde}
 
 Cette option indique le nombre de révision maximum à retourner. 
 
@@ -244,7 +244,7 @@ Exemple : les 10 dernières révisions
 
     GET api/v1/document/1234/history/?slice=10
 
-### Offset {#rest:cf027228-a908-419e-8e21-13c246281ecc}
+### Offset {#httpapi-ref:cf027228-a908-419e-8e21-13c246281ecc}
 
 Index à partir duquel, les révisions sont retournées.
 
@@ -252,7 +252,7 @@ Exemple: Les révisions de 7 à 10.
 
     GET api/v1/document/1234/history/?slice=2&offset=7
 
-### Révision {#rest:64f4d573-1b08-4bc7-aad0-d7183d488d42}
+### Révision {#httpapi-ref:64f4d573-1b08-4bc7-aad0-d7183d488d42}
 
 Cette option permet de ne retourner l'historique que d'une révision précise.
 
@@ -262,7 +262,7 @@ Exemple : Retourner la révision 3
 
 La première révision porte le n°0.
 
-## Autres URL d'accès {#rest:8501b952-4505-4442-b266-c33414020bec}
+## Autres URL d'accès {#httpapi-ref:8501b952-4505-4442-b266-c33414020bec}
 
 Vous pouvez aussi accéder à cette ressources via :
 

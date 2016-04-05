@@ -1,6 +1,6 @@
-# Consultation d'une révision d'un document {#rest:eb7b6954-0945-4f02-8e10-16e69729c529}
+# Consultation d'une révision d'un document {#httpapi-ref:eb7b6954-0945-4f02-8e10-16e69729c529}
 
-## URL {#rest:bc473017-a87d-497e-a374-23ac9eb9f45c}
+## URL {#httpapi-ref:bc473017-a87d-497e-a374-23ac9eb9f45c}
 
     GET /api/v1/documents/<documentId>/revisions/<revisionNumber>
 
@@ -15,15 +15,15 @@ Exemple :
 
 L'identifiant du document peut être son nom logique, son identifiant numérique.
 
-## Content {#rest:b0150fea-005b-4c7e-92d3-79ee9a07f5a4}
+## Content {#httpapi-ref:b0150fea-005b-4c7e-92d3-79ee9a07f5a4}
 
 Le contenu de la requête est vide.
 
-## Structure de retour {#rest:d3f1d448-be2d-48da-9e41-d0c58889e104}
+## Structure de retour {#httpapi-ref:d3f1d448-be2d-48da-9e41-d0c58889e104}
 
 Le retour est une donnée JSON.
 
-### En cas de réussite : {#rest:1ba36666-d1d6-47f0-b807-fc767c7c79b0}
+### En cas de réussite : {#httpapi-ref:1ba36666-d1d6-47f0-b807-fc767c7c79b0}
 
 La partie `data` contient 3 champs :
 
@@ -74,7 +74,7 @@ Exemple :
 
 
 
-### En cas d'échec {#rest:8fe1927f-ba0b-495e-b04d-a86233431f44}
+### En cas d'échec {#httpapi-ref:8fe1927f-ba0b-495e-b04d-a86233431f44}
 
 Les raisons d'échecs spécifiques à cette requête sont 
 
@@ -106,7 +106,7 @@ Cas d'erreur de document non trouvé
         "exceptionMessage" : "Document \"1200\" not found"
     }
 
-## Résultat partiel {#rest:3d1a9fa7-8afa-41cf-9c01-b4088d1ead6a}
+## Résultat partiel {#httpapi-ref:3d1a9fa7-8afa-41cf-9c01-b4088d1ead6a}
 
 Le document peut être retourné avec plus ou moins d'information.
 
@@ -127,7 +127,7 @@ Par défaut : `fields=document.properties,document.attributes`
 
 La liste des propriétés est documentée dans la [documentation de format collection][properties].
 
-## Cache {#rest:d9fde0fc-824e-41b7-aac6-ed07a52b6b56}
+## Cache {#httpapi-ref:d9fde0fc-824e-41b7-aac6-ed07a52b6b56}
 
 Dans le cadre du [cache][cache], le `Etag` est calculé à l'aide des éléments suivants :
 
@@ -139,7 +139,7 @@ Dans le cadre du [cache][cache], le `Etag` est calculé à l'aide des éléments
 
 L'ensemble de ces éléments sont concaténés et ensuite le [sha1][sha1] de cette concaténation consitue le `Etag`.
 
-## Autres URL d'accès {#rest:1bbf4922-a12f-4cc4-8aa0-16853148ac14}
+## Autres URL d'accès {#httpapi-ref:1bbf4922-a12f-4cc4-8aa0-16853148ac14}
 
 Vous pouvez aussi accéder à cette ressources via :
 
@@ -159,7 +159,7 @@ erreur 404 (ressource non trouvée) est retournée.
     GET /api/v1/trash/<documentId>/revisions/<revisionNumber>
 
 
-[trash]: #rest:52be10c1-9f46-456b-a22f-24909386567
-[cache]: #rest:804f8d68-acfa-4a35-bb41-27b2a27c14dc
+[trash]: #httpapi-ref:52be10c1-9f46-456b-a22f-24909386567
+[cache]: #httpapi-ref:804f8d68-acfa-4a35-bb41-27b2a27c14dc
 [sha1]: https://fr.wikipedia.org/wiki/SHA-1
 [properties]: http://docs.anakeen.com/dynacase/3.2/dynacase-doc-core-reference/website/book/core-ref:74ce9ce4-8e4e-42ee-a0df-415eb6897a81.html#core-ref:9ebcbfd6-d094-45ee-a993-9b221fb4d893
