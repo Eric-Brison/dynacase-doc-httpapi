@@ -102,16 +102,37 @@ Cas d'erreur de en cas d'attribut non énuméré
         "exceptionMessage" : "Attribute \"an_tatouage\" is not an enum (type \"int\") in family \"ZOO_ANIMAL\""
     }
 
-## Résultat partiel {#httpapi-ref:2b3c2de1-4a64-4d07-98b5-ad89f148be3e}
+## Résultat partiel (`?keyword` et `?operator`) {#httpapi-ref:2b3c2de1-4a64-4d07-98b5-ad89f148be3e}
 
-L'attribut peut être retourné avec plus ou moins d'items.
+Il est possible de filtrer les résultats pour n'en retourner qu'un sous ensemble.
 
 * GET `/api/v1/families/IUSER/enumerates/us_rolesorigin.json?keyword=<keyword>`
 * GET `/api/v1/families/IUSER/enumerates/us_rolesorigin.json?operator=startswith&keyword=<keyword>`
 
 Les paramètres sont :
 
-* `keyword` : celui-ci correspond au label,
-* `operator` : celui-ci correspond à l'opérateur appliqué, deux choix sont possibles :
-* `startswith` : le label commence par le `keyword`,
-* `contains` : le label contient le `keyword`.
+-   `keyword` : celui-ci correspond au terme recherché,
+-   `operator` : celui-ci correspond à l'opérateur appliqué, deux choix sont possibles :
+    +   `startswith` : le label commence par le `keyword`,
+    +   `contains` : le label contient le `keyword`.
+
+## Ordre des résultats (`?sortBy`) {#httpapi-ref:eadc524a-f708-4d40-9224-28698a93a042}
+
+Il est possible de spécifier l'ordre dans lequel les résultats doivent être retournés.
+
+-   GET `/api/v1/families/IUSER/enumerates/us_rolesorigin.json?sortBy=none`
+
+Les valeurs possibles pour `sortBy` sont :
+
+__`none`__ (tri par défaut)
+:   trie les énumérés par leur order dans la définition de l'énuméré.
+
+`key`
+:   trie les énumérés par ordre alphabétique de leur clé
+    
+    ce tri ne tient pas compte de la locale de l'utilisateur. C'est un tri alphabétique non naturel.
+
+`label`
+:   trie les énumérés par ordre alphabétique de leur label.
+    
+    ce tri tient compte de la locale de l'utilisateur.
