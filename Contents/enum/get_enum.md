@@ -116,16 +116,16 @@ Les paramètres sont :
     +   `startswith` : le label commence par le `keyword`,
     +   `contains` : le label contient le `keyword`.
 
-## Ordre des résultats (`?sortBy`) {#httpapi-ref:eadc524a-f708-4d40-9224-28698a93a042}
+## Ordre des résultats (`?orderBy`) {#httpapi-ref:eadc524a-f708-4d40-9224-28698a93a042}
 
 Il est possible de spécifier l'ordre dans lequel les résultats doivent être retournés.
 
 -   GET `/api/v1/families/IUSER/enumerates/us_rolesorigin.json?sortBy=none`
 
-Les valeurs possibles pour `sortBy` sont :
+Les valeurs possibles pour `orderBy` sont :
 
 __`none`__ (tri par défaut)
-:   trie les énumérés par leur order dans la définition de l'énuméré.
+:   trie les énumérés par l'ordre indiqué dans la définition de l'énuméré.
 
 `key`
 :   trie les énumérés par ordre alphabétique de leur clé
