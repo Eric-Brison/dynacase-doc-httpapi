@@ -224,13 +224,11 @@ La version de l'api est le chiffre indiqué après la lettre "v".
 
 ## Authentification {#httpapi-ref:a7d043da-bea5-4338-9a83-c04abd484934}
 
-L'accès à l'api demande une authentification.
+L'accès à l'api requiert une session valide préexistante et préalablement
+ouverte à l'aide des mécanismes d'authentification de Dynacase (voir [manuel de
+référence de Dynacase Core][authentification]).
 
-L'utilisation de l'api à l'intérieur d'interface de Dynacase utilise la
-mécanique d'authentification "classique" définie par Dynacase.
-
-Cette mécanique est décrite dans le [manuel de référence de Dynacase
-Core][authentification].
+L'api n'est pas utilisable en mode ["anonyme" ou "invité"][authent_guest].
 
 ## Droit d'accès {#httpapi-ref:cc9f6059-0ad6-4372-b82a-d5a1ca3ef6f3}
 
@@ -253,5 +251,6 @@ de ce type.
 
 [wikipedia_rest]: https://en.wikipedia.org/wiki/Representational_state_transfer "Source Wikipédia"
 [wikipedia_crud]: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete "Source Wikipédia"
-[authentification]: ../../../dynacase-doc-core-reference/website/book/core-ref:b482b82b-ebe2-46e4-8051-c6e83d11a2ae.html "Mécanisme d'authentification"
+[authentification]: #core-ref:b482b82b-ebe2-46e4-8051-c6e83d11a2ae "Mécanisme d'authentification"
 [wikipedia_http]: https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP "Source Wikipédia"
+[authent_guest]: #core-ref:932e2070-6929-11e2-8218-0021e9fffec1
