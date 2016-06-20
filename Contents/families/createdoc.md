@@ -22,11 +22,13 @@ Le contenu de la requête doit contenir une donnée JSON avec la liste des attri
 
     [javascript]
     {
-      "attributes" : {
-          "<attrName>" : {
-            "value" : <newValue>
+        "document": {
+          "attributes" : {
+              "<attrName>" : {
+                "value" : <newValue>
+              }
           }
-      }
+        }
     }
 
 Le type de la requête est `application/json`.
@@ -35,9 +37,12 @@ Exemple :
 
     [javascript]
     {
+      
+        "document": {
           "attributes" : {
               "ba_ttle" : {"value" : "Hello world"},
-              "ba_desc" : {"value" : "Nice Day"},
+              "ba_desc" : {"value" : "Nice Day"}
+        }
     }
 
 
@@ -46,8 +51,8 @@ Note : Toute donnée additionnelle sera ignorée.
 Cette forme ne permet pas d'enregistrer directement des fichiers dans le document.
 
 Pour enregistrer le fichier, il sera nécessaire de passer par la ressource
-`file` qui retournera un identifiant valide qui pourra être utilisé comme valeur
-d'attribut de type fichier.
+[`file`][tmpfile] qui retournera un identifiant valide qui pourra être utilisé
+comme valeur d'attribut de type fichier.
 
 
 ### Format urlEncoded {#httpapi-ref:a7f23059-e18a-4441-817c-2e08e60bb6ab}
@@ -117,5 +122,4 @@ Les raisons d'échecs spécifiques à cette requête sont
 
 
 [properties]: http://docs.anakeen.com/dynacase/3.2/dynacase-doc-core-reference/website/book/core-ref:74ce9ce4-8e4e-42ee-a0df-415eb6897a81.html#core-ref:9ebcbfd6-d094-45ee-a993-9b221fb4d893
-
-
+[tmpfile]:  #httpapi-ref:5797255d-128d-4aa4-9c11-2c8195cca63d
