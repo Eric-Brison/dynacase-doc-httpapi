@@ -10,8 +10,8 @@ L'extension de l'API REST passe par deux éléments :
 
 ## Classe de CRUD {#httpapi-ref:651043a1-f290-466e-977f-d39a195a1195}
 
-Les classes de CRUD étendent la classe `\Dcp\HttpApi\V1\Crud` et doivent
-implémenter les méthodes suivantes :
+Les classes de CRUD étendent la classe abstraite `\Dcp\HttpApi\V1\Crud\Crud` et
+doivent implémenter les méthodes suivantes :
 
 * `create` : création d'une ressource,
 * `read` : récupération d'une ressource,
@@ -57,40 +57,26 @@ Ce paramètre doit contenir un tableau encodé en JSON semblable à :
     [javascript]
     [
         {
-            "order" : 100,
-            "class" : "\\Dcp\\HttpApi\\V1\\DocumentCrud",
-            "regExp" : "/^\\/documents\\/?(?P<identifier>[^\\/]*)$/",
-            "description" : "Documents",
+            "order" :        300,
+            "class" :        "\\Dcp\\HttpApi\\V1\\Crud\\Document",
+            "regExp" :       "%^/documents/?(?P<identifier>[^/]+)$%",
+            "description" :  "Documents <documentId>",
             "canonicalURL" : "documents/<documentId>"
         },
         {
-            "order" : 100,
-             "class" : "\\Dcp\\HttpApi\\V1\\FamilyCrud",
-             "regExp" : "/^\\/families\\/(?P<identifier>[^\\/]*)\\/?$/",
-             "description" : "Families",
-             "canonicalURL" : "families/<familyId>"
-         },
-        {
-            "order" : 200,
-            "class" : "\\Dcp\\HttpApi\\V1\\FamilyDocumentCrud",
-            "regExp" : "/^\\/families\\/(?P<familyId>[^\\/]*)\\/documents\\/(?P<identifier>[^\\/]*)$/",
-            "description" : "Documents of the family <familyId>",
-            "canonicalURL" : "families/<familyId>/documents/<documentId>"
+            "order" :        100,
+            "class" :        "\\Dcp\\HttpApi\\V1\\Crud\\DocumentCollection",
+            "regExp" :       "%^/documents/$%",
+            "description" :  "List of all the documents",
+            "canonicalURL" : "documents/"
         },
         {
-            "order" : 100,
-            "class" : "\\Dcp\\HttpApi\\V1\\Trash",
-            "regExp" : "/^\\/trash\\/?(?P<identifier>[^\\/]*)$/",
-            "description" : "Deleted documents",
-            "canonicalURL" : "trash/<documentId>"
+            "order" :        100,
+            "class" :        "\\Dcp\\HttpApi\\V1\\Crud\\Family",
+            "regExp" :       "%^/families/(?P<identifier>[^/]+)$%",
+            "description" :  "Family <familyId>",
+            "canonicalURL" : "families/<familyId>"
         },
-        {
-            "order" : 100,
-            "class" : "\\Dcp\\HttpApi\\V1\\EnumCrud",
-            "regExp" : "/^\\/enums\\/(?P<familyId>[^\\/]*)\\/(?P<identifier>[^\\/]*)$/",
-            "description" : "Enumerate",
-            "canonicalURL" : "enums/<familyId>/<attributeIdentifier>/"
-        }
     ]
 
 Ce tableau contient des objets contenant chacun :
