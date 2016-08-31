@@ -4,6 +4,10 @@
 
 Téléchargement d'une image redimensionnée.
 
+
+<span class="flag inline nota-bene"></span> Le redimensionnement ne peux excéder
+ la taille de l'image originale.
+
 ### Images enregistrées sur le serveur  {#httpapi-ref:da05edb4-7ffd-4758-a3e1-ca683ee7222e}
 
 Pour les images enregistrées sur le serveur, l'url d'accès est : 
@@ -85,7 +89,7 @@ Exemple : informations sur l'attribut image "es_photo" du document n°66518.
                         "displayValue": "panda-bambou-alimentation.jpg"
                     }
                 },
-                "uri": "/tmp32/api/v1/documents/66518.json"
+                "uri": "/tmp/api/v1/documents/66518.json"
             }
         }
     }
