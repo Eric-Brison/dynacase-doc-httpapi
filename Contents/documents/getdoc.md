@@ -50,7 +50,7 @@ Exemple :
                     "title" :     "La culture des perles",
                     "state" :     null,
                     "name" :      null,
-                    "icon" :      "resizeimg.php?img=Images%2Fdoc.png&size=32",
+                    "icon" :      "api/v1/images/assets/sizes/24x24c/doc.png",
                     "fromname" :  "MY_ARTICLE",
                     [...]
                 },
@@ -78,11 +78,12 @@ Les raisons d'échecs spécifiques à cette requête sont
 
 |                     Raison                     | Status HTTP | Error Code |
 | ---------------------------------------------- | ----------- | ---------- |
-| Document non trouvé                            |         404 | API0200    |
-| Privilège insuffisant pour accéder au document |         403 | API0201    |
-| Document supprimé                              |         404 | API0219    |
-| Propriété demandée inexistante                 |         400 | API0202    |
-| Attribut demandé inexistant                    |         400 | API0218    |
+| Document non trouvé                            |         404 | CRUD0200   |
+| Privilège insuffisant pour accéder au document |         403 | CRUD0201   |
+| Document supprimé                              |         404 | CRUD0219   |
+| Propriété demandée inexistante                 |         400 | CRUD0202   |
+| Attribut demandé inexistant                    |         400 | CRUD0218   |
+|                                                |             |            |
 
 Exemple : 
 

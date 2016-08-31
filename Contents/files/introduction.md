@@ -1,25 +1,25 @@
-# Fichier temporaires {#httpapi-ref:56503bcd-006a-432c-942b-70de3931ce06}
+# Fichiers {#httpapi-ref:f0cb126e-f2df-4f3a-ae73-a08a982241df}
 
-Cette collection décrit les fichiers temporaires de Dynacase. 
+Cette collection décrit l'accès aux fichiers contenu dans les documents. 
 
-## URL {#httpapi-ref:a559dc7c-150a-406e-a7e1-cac545ba4e6d}
+## URL  {#httpapi-ref:841de6ab-8f78-4aa2-803f-2bb4fc91697c}
 
-L'url d'accès est : `/api/v1/temporaryFiles/`
+L'url d'accès est : `api/v1/documents/<documentId>/files/<attrid>/<index>`
 
-## Méthodes {#httpapi-ref:0d4893fa-1bef-4389-9e5d-1ec76fbc3af1}
+## Méthodes  {#httpapi-ref:3babfba9-ad57-4b5f-b845-103d17474c0d}
 
 La collection files implémente les éléments suivants :
 
 * Collection :
 
-| Action   | URL                               | Action effectuée                                   |
-| :-     : | :                                :| :                                                : |
-| `GET`    | `/api/v1/temporaryFiles/`         | N/A                                                |
-| `POST`   | `/api/v1/temporaryFiles/`         | [Créer un nouveau fichier temporaire][create_file] |
-| `PUT`    | `/api/v1/temporaryFiles/`         | N/A                                                |
-| `DELETE` | `/api/v1/temporaryFiles/`         | N/A                                                |
+| Action   | URL                                            | Action effectuée                                                               |
+| :-     : | :                                :             | :                                                :                             |
+| `GET`    | `api/v1/documents/<documentId>/files/<attrid>` | [Télécharge un fichier d'un attribut de type `file` ou `image`][download_file] |
+| `POST`   | `api/v1/temporaryFiles/`                       | N/A                                                                            |
+| `PUT`    | `api/v1/temporaryFiles/`                       | N/A                                                                            |
+| `DELETE` | `api/v1/temporaryFiles/`                       | N/A                                                                            |
 
 
 
 <!-- links -->
-[create_file]: #httpapi-ref:5797255d-128d-4aa4-9c11-2c8195cca63d
+[download_file]: #httpapi-ref:674fcf43-a53c-41e0-828d-ab700ff85c77

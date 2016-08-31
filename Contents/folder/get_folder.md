@@ -51,7 +51,7 @@ Exemple :
                     "properties": {
                         "id": 1003,
                         "title": "Réchauffement climatique",
-                        "icon": "resizeimg.php?img=Images%2Farticle.png&size=24",
+                        "icon": "api/v1/images/assets/sizes/24x24c/article.png",
                         "initid": 1003,
                         "name": null,
                         "revision": 0

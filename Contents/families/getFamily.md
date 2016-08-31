@@ -38,7 +38,7 @@ Exemple :
                 "properties": {
                     "id": 1065,
                     "title": "Articles",
-                    "icon": "resizeimg.php?img=Images%2Farticle.png&size=24",
+                    "icon": "api/v1/images/assets/sizes/24x24c/article.png",
                     "initid": 1065,
                     "name": "MY_ARTICLE",
                     "revision": 0

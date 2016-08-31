@@ -44,7 +44,7 @@ Exemple :
                 "properties": {
                     "id": 28203,
                     "title": "Le monde sous-marin",
-                    "icon": "resizeimg.php?img=Images%2Farticle.gif&size=24",
+                    "icon": "api/v1/images/assets/sizes/24x24c/article.gif",
                     "initid": 7120,
                     "name": null,
                     "revision": 17,

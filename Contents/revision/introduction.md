@@ -4,7 +4,7 @@ Cette sous-collection décrit les [révisions][doc_revision] des documents.
 
 ## URL {#httpapi-ref:ba5ca85c-ab4b-40d1-91b6-3db0d986bf46}
 
-L'url d'accès est : `/api/v1/documents/<documentId>/revisions/`
+L'url d'accès est : `api/v1/documents/<documentId>/revisions/`
 
 ## Méthodes  {#httpapi-ref:ed4f6df0-6b9d-4ba0-a22a-723916291ca3}
 
@@ -12,21 +12,21 @@ La sous-collection `revisions` implémente les éléments suivants :
 
 * Collection :
 
-| Action   | URL                                         | Action effectuée                             |
-| :-     : | :                      :                    | :                                            |
-| `GET`    | `/api/v1/documents/<documentId>/revisions/` | [Liste des urls de révisions][list_revision] |
-| `POST`   | `/api/v1/documents/<documentId>/revisions/` | N/A                                          |
-| `PUT`    | `/api/v1/documents/<documentId>/revisions/` | N/A                                          |
-| `DELETE` | `/api/v1/documents/<documentId>/revisions/` | N/A                                          |
+| Action   | URL                                        | Action effectuée                             |
+| :-     : | :                      :                   | :                                            |
+| `GET`    | `api/v1/documents/<documentId>/revisions/` | [Liste des urls de révisions][list_revision] |
+| `POST`   | `api/v1/documents/<documentId>/revisions/` | N/A                                          |
+| `PUT`    | `api/v1/documents/<documentId>/revisions/` | N/A                                          |
+| `DELETE` | `api/v1/documents/<documentId>/revisions/` | N/A                                          |
 
 * Ressource :
 
-| Action   | URL                                                         | Action effectuée                           |
-| :-     : | :                      :                                    | :                                          |
-| `GET`    | `/api/v1/documents/<documentId>/revisions/<revisionNumber>` | [Récupère une révision][get_revision]      |
-| `POST`   | `/api/v1/documents/<documentId>/revisions/<revisionNumber>` | N/A                                        |
-| `PUT`    | `/api/v1/documents/<documentId>/revisions/<revisionNumber>` | N/A                                        |
-| `DELETE` | `/api/v1/documents/<documentId>/revisions/<revisionNumber>` | N/A                                        |
+| Action   | URL                                                        | Action effectuée                      |
+| :-     : | :                      :                                   | :                                     |
+| `GET`    | `api/v1/documents/<documentId>/revisions/<revisionNumber>` | [Récupère une révision][get_revision] |
+| `POST`   | `api/v1/documents/<documentId>/revisions/<revisionNumber>` | N/A                                   |
+| `PUT`    | `api/v1/documents/<documentId>/revisions/<revisionNumber>` | N/A                                   |
+| `DELETE` | `api/v1/documents/<documentId>/revisions/<revisionNumber>` | N/A                                   |
 
 
 <!-- links -->

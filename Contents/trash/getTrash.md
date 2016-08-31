@@ -45,7 +45,7 @@ Exemple :
                 "properties" : {
                     "title" :     "Aristote le Stagirite",
                     "name" :      null,
-                    "icon" :      "resizeimg.php?img=Images%2Fdoc.png&size=32"
+                    "icon" :      "api/v1/images/assets/sizes/24x24c/doc.png"
                     [...]
                 },
                 "attributes" : {

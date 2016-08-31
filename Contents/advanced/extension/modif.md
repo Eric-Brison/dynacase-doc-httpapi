@@ -77,6 +77,15 @@ Ce paramètre doit contenir un tableau encodé en JSON semblable à :
             "description" :  "Family <familyId>",
             "canonicalURL" : "families/<familyId>"
         },
+        {
+            "order" :        100,
+            "class" :        "\\Dcp\\HttpApi\\V1\\Crud\\ImageAsset",
+            "regExp" :       "%^/images/assets/sizes/(?P<size>[0-9x]+[cfs]?)/(?P<identifier>.+)$%",
+            "description" :  "Download resized file image",
+            "canonicalURL" : "images/assets/sizes/<width>x<height>/<fileImageName>",
+            "standalone" :    true,
+            "acceptExtensions" : ["jpg","jpeg","png","gif"]
+        }
     ]
 
 Ce tableau contient des objets contenant chacun :
@@ -96,6 +105,15 @@ ressource (cette clef est utilisée dans la page par défaut de l'API),
 
 * `canonicalURL` (optionnel) : URL d'accès à la ressources (cette clef est
 utilisée dans la page par défaut de l'API).
+
+* `standalone` (optionnel) : (booléen) Si la valeur est vrai, l'authentification 
+n'est pas vérifiée et l'initialisation du contexte Dynacase n'est pas réalisée. 
+Par défaut, la valeur est faux. La méthode utilisée doit être autonome en terme
+ de contrôle d'accès et de traitement.
+
+* `acceptExtensions` (optionnel) : Liste (tableau) indiquant les extensions autorisées.
+Par défaut seul l'extension ".json" et ".html" sont autorisées. Il faut dans ce 
+cas que la méthode indique elle-même le `Content-type` dans le header HTTP.
 
 <span class="flag inline nota-bene"></span> Si une route à égalité est ajoutée
 avec une route `system` (regexp positive et order égal), alors c'est la route

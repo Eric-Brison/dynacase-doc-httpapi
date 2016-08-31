@@ -46,7 +46,7 @@ Exemple :
                     "properties": {
                         "id": 1894,
                         "title": "Les articles intéressants",
-                        "icon": "resizeimg.php?img=CORE%2FImages%2Fsearch.gif&size=24",
+                        "icon": "api/v1/images/assets/sizes/24x24c/search.gif",
                         "initid": 1894,
                         "name": null,
                         "revision": 0
