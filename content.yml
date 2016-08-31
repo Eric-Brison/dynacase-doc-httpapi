@@ -105,10 +105,22 @@ book:
       - level:  2
         content: "enum/get_enum.md"
       - level:   1
+        content:  "tmpfiles/introduction.md"
+        subtoc : 2
+      - level:  2
+        content: "tmpfiles/create.md"
+      - level:   1
         content:  "files/introduction.md"
         subtoc : 2
       - level:  2
-        content: "files/create.md"
+        content: "files/downloadFile.md"
+      - level:   1
+        content:  "image/introduction.md"
+        subtoc : 2
+      - level:  2
+        content: "image/downloadImage.md"
+      - level:  2
+        content: "image/resizeImage.md"
       - level:   1
         content:  "advanced/introduction.md"
         subtoc : 2

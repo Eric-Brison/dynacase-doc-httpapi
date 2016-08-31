@@ -51,7 +51,7 @@ Exemple :
                     "properties": {
                         "id": 1003,
                         "title": "accord",
-                        "icon": "resizeimg.php?img=Images%2Fwask.png&size=24",
+                        "icon": "api/v1/images/assets/sizes/24x24c/wask.png",
                         "initid": 1003,
                         "name": "WASK",
                         "revision": 0

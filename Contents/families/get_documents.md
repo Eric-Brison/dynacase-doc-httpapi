@@ -51,7 +51,7 @@ Exemple :
                     "properties": {
                         "id": 1054,
                         "title": "La vie des fourmis",
-                        "icon": "resizeimg.php?img=Images%2Ftext.gif&size=24",
+                        "icon": "api/v1/images/assets/sizes/24x24c/text.gif",
                         "initid": 1054,
                         "name": null,
                         "revision": 0
@@ -62,7 +62,7 @@ Exemple :
                     "properties": {
                         "id": 1053,
                         "title": "Les grands philosophes",
-                        "icon": "resizeimg.php?img=Images%2Ftext.gif&size=24",
+                        "icon": "api/v1/images/assets/sizes/24x24c/text.gif",
                         "initid": 1053,
                         "name": null,
                         "revision": 0

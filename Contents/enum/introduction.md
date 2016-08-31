@@ -4,7 +4,7 @@ Cette collection décrit les [énumérés][doc_enum] de Dynacase.
 
 ## URL {#httpapi-ref:c017bd55-0699-47c3-ae65-edd85413b3b3}
 
-L'url d'accès est : `/api/v1/families/<famName>/enumerates/`
+L'url d'accès est : `api/v1/families/<famName>/enumerates/`
 
 ## Méthodes {#httpapi-ref:f55c6681-b62a-45c1-ac61-ffd552eda60c}
 
@@ -12,21 +12,21 @@ La sous-collection enumerates implémente les éléments suivants :
 
 * Collection :
 
-| Action   | URL                                               | Action effectuée                                                   |
-| :-     : | :                                                :| :                                                                : |
-| `GET`    | `/api/v1/families/<famName>/enumerates/`          | [Liste des attributs énumérés][get_enum_list]                      |
-| `POST`   | `/api/v1/families/<famName>/enumerates/`          | N/A                                                                |
-| `PUT`    | `/api/v1/families/<famName>/enumerates/`          | N/A                                                                |
-| `DELETE` | `/api/v1/families/<famName>/enumerates/`          | N/A                                                                |
+| Action   | URL                                                | Action effectuée                                                   |
+| :-     : | :                                                : | :                                                                : |
+| `GET`    | `api/v1/families/<famName>/enumerates/`            | [Liste des attributs énumérés][get_enum_list]                      |
+| `POST`   | `api/v1/families/<famName>/enumerates/`            | N/A                                                                |
+| `PUT`    | `api/v1/families/<famName>/enumerates/`            | N/A                                                                |
+| `DELETE` | `api/v1/families/<famName>/enumerates/`            | N/A                                                                |
 
 * Ressource :
 
-| Action   | URL                                                    | Action effectuée                                              |
-| :-     : | :                                                     :| :                                                           : |
-| `GET`    | `/api/v1/families/<famName>/enumerates/<attrid>`       | [Retourne la définition de l'énuméré attrid][get_enum]        |
-| `POST`   | `/api/v1/families/<famName>/enumerates/<attrid>`       | N/A                                                           |
-| `PUT`    | `/api/v1/families/<famName>/enumerates/<attrid>`       | N/A                                                           |
-| `DELETE` | `/api/v1/families/<famName>/enumerates/<attrid>`       | N/A                                                           |
+| Action   | URL                                                     | Action effectuée                                              |
+| :-     : | :                                                     : | :                                                           : |
+| `GET`    | `api/v1/families/<famName>/enumerates/<attrid>`         | [Retourne la définition de l'énuméré attrid][get_enum]        |
+| `POST`   | `api/v1/families/<famName>/enumerates/<attrid>`         | N/A                                                           |
+| `PUT`    | `api/v1/families/<famName>/enumerates/<attrid>`         | N/A                                                           |
+| `DELETE` | `api/v1/families/<famName>/enumerates/<attrid>`         | N/A                                                           |
 
 
 <!-- links -->

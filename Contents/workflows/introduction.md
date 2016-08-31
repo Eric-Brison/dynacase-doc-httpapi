@@ -5,7 +5,7 @@ associé à un document.
 
 ## URL  {#httpapi-ref:4bc76553-f81d-4838-b113-3b355216cbf9}
 
-L'url d'accès est : `/api/v1/documents/<docid>/workflows/`
+L'url d'accès est : `api/v1/documents/<docid>/workflows/`
 
 ## Méthodes  {#httpapi-ref:17732d6d-58df-40bb-a37d-8cb2baa06e15}
 
@@ -15,28 +15,28 @@ La collection *documents* implémente les éléments suivants :
 
 | Action   | URL                                               | Action effectuée                                                              |
 | :-     : | :                      :                          | :                                                                    :        |
-| `GET`    | `/api/v1/documents/<docid>/workflows/states/`      | [Retourne la liste des états][get_states] pour le document `docid`            |
+| `GET`    | `api/v1/documents/<docid>/workflows/states/`      | [Retourne la liste des états][get_states] pour le document `docid`            |
 | `POST`   |                                                   | N/A                                                                           |
 | `PUT`    |                                                   | N/A                                                                           |
 | `DELETE` |                                                   | N/A                                                                           |
-| `GET`    | `/api/v1/documents/<docid>/workflows/transitions/` | [Retourne la liste des transitions][get_transitions] pour le document `docid` |
+| `GET`    | `api/v1/documents/<docid>/workflows/transitions/` | [Retourne la liste des transitions][get_transitions] pour le document `docid` |
 | `POST`   |                                                   | N/A                                                                           |
 | `PUT`    |                                                   | N/A                                                                           |
 | `DELETE` |                                                   | N/A                                                                           |
 
 * Ressource :
 
-| Action   | URL                                                           | Action effectuée                                                                |
-| :-     : | :                        :                                    | :                                      :                                        |
-| `GET`    | `/api/v1/documents/<id>/workflows/states/<stateId>`           | [Retourne les caractéristiques de l'état `stateId`][get_state]                  |
-| `POST`   |                                                               | [Change l'état du document `docid`][create_state]                               |
-| `PUT`    |                                                               | N/A                                                                             |
-| `DELETE` |                                                               | N/A                                                                             |
-|          |                                                               |                                                                                 |
-| `GET`    | `/api/v1/documents/<id>/workflows/transitions/<transitionId>` | [Retourne les caractéristiques de la transition `transitionId`][get_transition] |
-| `POST`   |                                                               | [Change la transition du document `docid`][create_transition]                   |
-| `PUT`    |                                                               | N/A                                                                             |
-| `DELETE` |                                                               | N/A                                                                             |
+| Action   | URL                                                          | Action effectuée                                                                |
+| :-     : | :                        :                                   | :                                      :                                        |
+| `GET`    | `api/v1/documents/<id>/workflows/states/<stateId>`           | [Retourne les caractéristiques de l'état `stateId`][get_state]                  |
+| `POST`   |                                                              | [Change l'état du document `docid`][create_state]                               |
+| `PUT`    |                                                              | N/A                                                                             |
+| `DELETE` |                                                              | N/A                                                                             |
+|          |                                                              |                                                                                 |
+| `GET`    | `api/v1/documents/<id>/workflows/transitions/<transitionId>` | [Retourne les caractéristiques de la transition `transitionId`][get_transition] |
+| `POST`   |                                                              | [Change la transition du document `docid`][create_transition]                   |
+| `PUT`    |                                                              | N/A                                                                             |
+| `DELETE` |                                                              | N/A                                                                             |
 
 
 <!-- links -->

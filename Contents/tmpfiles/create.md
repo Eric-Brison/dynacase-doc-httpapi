@@ -73,15 +73,15 @@ Exemple, création d'un fichier temporaire
         "messages" :         [],
         "data" :             {
             "file" : {
-                "id" :           "14",
-                "mime" :         "image\/jpeg",
-                "size" :         "45860",
-                "thumbnailUrl" : "resizeimg.php?img=vaultid=14&size=48",
-                "reference" :    "image\/jpeg|14|BeMZfJLCAAAcUqj.jpg",
-                "cdate" :        "2014-10-13 11:40:12",
-                "downloadUrl" :  "file\/0\/14\/-\/-1\/BeMZfJLCAAAcUqj.jpg?cache=no&inline=no",
-                "iconUrl" :      "resizeimg.php?img=Images\/mime-image.png&size=20",
-                "fileName" :     "BeMZfJLCAAAcUqj.jpg"
+                cdate:          "2016-08-30 11:41:45"
+                downloadUrl:    "api/v1/images/recorded/original/8878229557124583290.png"
+                fileName:       "une-fourmis-panda-ark.jpg"
+                iconUrl:        "api/v1/images/assets/sizes/20/mime-image.png"
+                id:             "8878229557124583290"
+                mime:           "image/jpeg"
+                reference:      "image/jpeg|8878229557124583290|une-fourmis-panda-ark.jpg"
+                size:           "102997"
+                thumbnailUrl:   "api/v1/images/recorded/sizes/48/8878229557124583290.png"
             }
         },
         "exceptionMessage" : "",

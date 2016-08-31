@@ -49,7 +49,7 @@ Exemple :
                     "properties": {
                         "id": 1011,
                         "title": "Administrateurs",
-                        "icon": "resizeimg.php?img=Images%2Figroup.png&size=24",
+                        "icon": "api/v1/images/assets/sizes/24x24c/igroup.png",
                         "initid": 1011,
                         "name": "GADMIN",
                         "revision": 0

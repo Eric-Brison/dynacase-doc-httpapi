@@ -6,7 +6,7 @@ un document pour un utilisateur particulier.
 
 ## URL  {#httpapi-ref:4107fe84-3c08-4890-8f58-1115256a2b25}
 
-L'url d'accès est : `/api/v1/documents/<documentId>/usertags/`
+L'url d'accès est : `api/v1/documents/<documentId>/usertags/`
 
 ## Méthodes  {#httpapi-ref:9cef4175-3161-4bfb-af98-46e83787d6ff}
 
@@ -16,19 +16,19 @@ La sous-collection usertags implémente les éléments suivants :
 
 | Action   | URL                                          | Action effectuée                                      |
 | :-     : | :                                          : | :                                                   : |
-| `GET`    | `/api/v1/documents/<documentId>/usertags/`   | [Liste des tags utilisateurs][get_usertag_list]       |
-| `POST`   | `/api/v1/documents/<documentId>/usertags/`   | N/A                                                   |
-| `PUT`    | `/api/v1/documents/<documentId>/usertags/`   | N/A                                                   |
-| `DELETE` | `/api/v1/documents/<documentId>/usertags/`   | N/A                                                   |
+| `GET`    | `api/v1/documents/<documentId>/usertags/`    | [Liste des tags utilisateurs][get_usertag_list]       |
+| `POST`   | `api/v1/documents/<documentId>/usertags/`    | N/A                                                   |
+| `PUT`    | `api/v1/documents/<documentId>/usertags/`    | N/A                                                   |
+| `DELETE` | `api/v1/documents/<documentId>/usertags/`    | N/A                                                   |
 
 * Ressource :
 
 | Action   | URL                                                     | Action effectuée                                              |
 | :-     : | :                                                     : | :                                                           : |
-| `GET`    | `/api/v1/documents/<documentId>/usertags/<tagid>`       | [Retourne la définition du tag donnée][get_usertag]           |
-| `POST`   | `/api/v1/documents/<documentId>/usertags/<tagid>`       | [Ajoute un tag][post_usertag]                                 |
-| `PUT`    | `/api/v1/documents/<documentId>/usertags/<tagid>`       | [Modifie un tag existant][put_usertag]                        |
-| `DELETE` | `/api/v1/documents/<documentId>/usertags/<tagid>`       | [Supprime un tag][delete_usertag]                             |
+| `GET`    | `api/v1/documents/<documentId>/usertags/<tagid>`        | [Retourne la définition du tag donnée][get_usertag]           |
+| `POST`   | `api/v1/documents/<documentId>/usertags/<tagid>`        | [Ajoute un tag][post_usertag]                                 |
+| `PUT`    | `api/v1/documents/<documentId>/usertags/<tagid>`        | [Modifie un tag existant][put_usertag]                        |
+| `DELETE` | `api/v1/documents/<documentId>/usertags/<tagid>`        | [Supprime un tag][delete_usertag]                             |
 |          |                                                         |                                                               |
 
 
