@@ -222,13 +222,7 @@ La version de l'api doit être indiquée dans l'url :
 
 La version de l'api est le chiffre indiqué après la lettre "v".
 
-## Authentification {#httpapi-ref:a7d043da-bea5-4338-9a83-c04abd484934}
 
-L'accès à l'api requiert une session valide préexistante et préalablement
-ouverte à l'aide des mécanismes d'authentification de Dynacase (voir [manuel de
-référence de Dynacase Core][authentification]).
-
-L'api n'est pas utilisable en mode ["anonyme" ou "invité"][authent_guest].
 
 ## Droit d'accès {#httpapi-ref:cc9f6059-0ad6-4372-b82a-d5a1ca3ef6f3}
 
@@ -246,11 +240,18 @@ méthodes sur les ressources/collections :
 Ces droits s'appliquent de manière globale sur toute l'API quelque soit la
 ressource/collection concernée.
 
-Si un utilisateur ne possède pas le droits, il ne peut pas effectuer de demande
+Si un utilisateur ne possède pas le droit, il ne peut pas effectuer de demande
 de ce type.
+
+L'accès aux routes est contrôlé si la configuration de la route indique un 
+[droit spécifique][routeadd].
+
 
 [wikipedia_rest]: https://en.wikipedia.org/wiki/Representational_state_transfer "Source Wikipédia"
 [wikipedia_crud]: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete "Source Wikipédia"
 [authentification]: #core-ref:b482b82b-ebe2-46e4-8051-c6e83d11a2ae "Mécanisme d'authentification"
 [wikipedia_http]: https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP "Source Wikipédia"
 [authent_guest]: #core-ref:932e2070-6929-11e2-8218-0021e9fffec1
+[coreacls]:      #core-ref:a98b72ea-c063-4907-abc4-e5171ab55e59
+
+[routeadd]:     #httpapi-ref:7466f89c-87de-4dbe-89af-fdc2db37b9a4

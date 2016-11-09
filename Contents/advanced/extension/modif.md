@@ -46,7 +46,7 @@ de la gestion du [cache][cache].
  * si le `header` `content-type` est `x-www-form-urlencoded` ou `form-data` : le contenu est le `php://input` form décodé,
 * `DELETE` :  le `contentParameters` est un array vide.
 
-## Enregistrement CRUD {#httpapi-ref:7466f89c-87de-4dbe-89af-fdc2db37b9a4}
+## Enregistrement d'une route {#httpapi-ref:7466f89c-87de-4dbe-89af-fdc2db37b9a4}
 
 La nouvelle classe de CRUD doit ensuite être enregistrée auprès de l'application
 `HTTPAPI_V1`, ceci se fait via l'ajout d'un fichier `json` dans le répertoire
@@ -115,6 +115,21 @@ Par défaut, la valeur est faux. La méthode utilisée doit être autonome en te
 Par défaut seul l'extension ".json" et ".html" sont autorisées. Il faut dans ce 
 cas que la méthode indique elle-même le `Content-type` dans le header HTTP.
 
+* `acl` (optionnel) : Indique le [droit applicatif][coreacls] nécessaire pour accéder à la route.
+    Si l'objet `{application, acl}` est fourni alors ce droit est vérifié pour 
+    chacune des méthodes HTTP.  
+    Pour indiquer des droits différents par méthode, il faut utiliser la notation 
+    par méthode. 
+    Si aucun droit n'est indiqué, alors seul le droit sur la méthode est 
+    [vérifié][aclrest]. Par contre, si un droit est indiqué, seul ce droit est vérifié.
+
+    [javascript]
+    {"GET": {"application":"MYAPP", "acl":"MYGETACL"}, 
+     "PUT": {"application":"MYAPP", "acl":"MYPUTACL"}, 
+     "POST": {"application":"MYAPP", "acl":"MYPOSTACL"}, 
+     "DELETE": {"application":"MYAPP", "acl":"MYDELETEACL"}, 
+    }
+
 <span class="flag inline nota-bene"></span> Si une route à égalité est ajoutée
 avec une route `system` (regexp positive et order égal), alors c'est la route
 `custom` qui est sélectionnée. Cela permet de surcharger les routes
@@ -128,3 +143,6 @@ réalisée en exécutant l'action `INIT_RULES` de l'application `HTTAPI_V1`.
 
 [save_CRUD]: #httpapi-ref:651043a1-f290-466e-977f-d39a195a1195
 [cache]: #httpapi-ref:804f8d68-acfa-4a35-bb41-27b2a27c14dc
+[aclrest]:  #httpapi-ref:cc9f6059-0ad6-4372-b82a-d5a1ca3ef6f3
+
+[coreacls]:      #core-ref:a98b72ea-c063-4907-abc4-e5171ab55e59

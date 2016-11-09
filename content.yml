@@ -9,6 +9,8 @@ book:
     chapters:
       - level:  1
         content: "intro.md"
+      - level:  2
+        content: "authent.md"
       - level:  1
         content: "historique/historique.md"
       - level:  1
