@@ -196,7 +196,7 @@ Dans ce cas, celui-ci doit contenir la méthode utilisée (Basic) suivi de la
 représentation en Base64 du nom de l'utilisateur et du mot de passe séparés par
 le caractère « : » (deux-points).
 
-Certain programme commL'accès peut être effectué via une url comportant le login est le mot passe
+L'accès peut être effectué via une url comportant le login est le mot passe
 
 *   GET http://john.doe:secret@example.net/api/v1/documents/1234
 
