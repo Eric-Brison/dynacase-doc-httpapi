@@ -60,14 +60,43 @@ L'extraction des `contentParameters` varie suivant le type de requête :
 * `DELETE` :  le `contentParameters` est un array vide.
 
 
+## Messages pour les types json {#httpapi-ref:cde0afab-54a8-4337-8038-be9b335f6b54}
+
 La méthode `::addMessage(RecordReturnMessage $message)` permet d'ajouter un message.
 
 Cette méthode permet d'ajouter un message dans la donnée renvoyée si le type retourné est du json.
 Si le type est html, seuls les messages d'erreur sont pris en compte. Dans ce cas
 le retour se fait par une page html contenant le message d'erreur.
 
-Exemple de message retourné :
+La classe `Dcp\HttpApi\V1\Api\RecordReturnMessage` est une classe de description 
+de message, elle contient les attributs publics suivants :
 
+    [php]
+    string $type = self::MESSAGE; // Type de message ::ERROR, ::WARNING, ::INFO, ::NOTICE, ::DEBUG
+    string $contentText = '';     // Texte brut
+    string $contentHtml = '';     // Texte formaté (doit être échappé)
+    string $code = '';            // Code - Utilisé pour les codes erreurs
+    string $uri = '';             // Url - pour indiquer une page par exemple
+    mixed $data = null;           // autres données - 
+
+Exemple :
+
+    [php]
+    use Dcp\HttpApi\V1\Api\RecordReturnMessage;
+    
+    // Message text simple
+    $message1=new RecordReturnMessage();
+    $message1->contentText=sprintf("Hello");
+    
+    // Avertissement texte formaté
+    $message2=new RecordReturnMessage();
+    $message2->contentHtml=sprintf("<b>Attention</b>");
+    $message2->type=RecordReturnMessage::WARNING;
+
+### Exemple de message retourné {#httpapi-ref:e082f087-3b94-482c-8938-faee8048f3b1}
+
+
+    [javascript]
     {
         "success":true,
         "messages":[
@@ -77,6 +106,8 @@ Exemple de message retourné :
             "uri":"\/api\/v1\/documents\/35699\/locks\/permanent",
             "lock":null}
     }
+
+## Méthodes de la classe Crud {#httpapi-ref:184d7f77-b5da-4cde-b3ba-55e95f973332}
 
 La classe fournit aussi quelques autres méthodes surchargeables :
 
