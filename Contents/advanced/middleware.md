@@ -95,7 +95,8 @@ Cet objet permet d'accéder aux éléments de la réponse en cours et permet la 
 
 Méthodes d'accès : (*getter*)
 
-*   `mixed getBody()` : retourne les données à envoyer
+*   `mixed getBody()` : retourne les données (partie `data` )à envoyer
+*   `mixed getResponse()` : retourne les données personnalisées à envoyer (retourne la valeur donnée par setResponse()).
 *   `string getStatusHeader()` : retourne le statut http à envoyer
 *   `string[] getHeaders()` : retourne la liste des headers http à envoyer
 *   `RecordReturnMessage  getMessages()` : retourne la liste des [messages][message] à envoyer
@@ -106,7 +107,8 @@ Méthodes de modification : (*setter*)
 *   `addMessage(RecordReturnMessage $message)` : ajouter un [messages][message]
 *   `setStatusHeader($httpStatusHeader)` : modifier le status HTTP
 *   `addHeader($key, $value, $replace = true)` : ajouter un header http
-*   `setBody($data)` : modifie les données à renvoyer
+*   `setBody($data)` : modifie les données (partie `data` de la réponse) à renvoyer
+*   `setResponse($response)` : modifie la réponse complète - Écrase la partie `data`.
 *   `sendResponse()` : donne l'ordre d'envoi de la réponse, les traitements suivants
     (autres middlewares ou code principal) **sont ignorés**.
 
@@ -114,10 +116,22 @@ L'objet retourné par la  méthode `::getHttpResponse()` est le même pour tous 
 Le middleware suivant accède à la réponse du middleware précédent.
 
 Attention : l'appel de la route principale écrase les éventuelles affectations 
-effectuées par les middlewares "before" au moyen des méthodes `setBody` et `setStatusHeader`.
+effectuées par les middlewares "before" au moyen des méthodes `setBody`, `setResponse` et `setStatusHeader`.
 
 Lorsque le contenu est de la donnée `json`, les méthodes `getBody` et `setBody`
 manipulent la partie [`data`][jsondata] fournie par les méthodes CRUD.
+
+Pour retourner des données personnalisées, il faut utiliser la méthode `setResponse()`.
+Lorsque cette méthode est utilisée, les messages et la partie `data` ne sont pas transmises
+dans le message. Pour les inclure, il faut explicitement les ajouter.
+
+    [php]
+    $httpResponse->setResponse([
+                 "data"=>$httpResponse->getBody(),
+                 "messages"=>$httpResponse->getMessages(),
+                 "myCustom"=> $myCustomValues
+    ]);
+
 Lorsque le contenu est du HTML, ces méthodes manipulent directement la chaîne de caractères
 correspondant au code HTML.
 
@@ -186,6 +200,45 @@ Le retour sera de la forme :
             "uri":"\/api\/v1\/documents\/35699\/locks\/permanent",
             "lock":null,
             "myCustom":"Hello world"}
+        }
+    }
+
+
+Construction d'une réponse personnalisée "myCustom" dans la réponse d'un middleware "after".
+
+    [php]
+    namespace My;
+        
+    use Dcp\HttpApi\V1\Crud\MiddleWare;
+    use Dcp\HttpApi\V1\DocManager\DocManager as DocManager;
+    use Dcp\HttpApi\V1\Api\RecordReturnMessage;
+    
+    class SayCustomHello extends MiddleWare
+    {
+        public function read($resourceId)
+        {
+            $document=DocManager::getDocument($resourceId);
+            
+            if ($document) {
+                $httpResponse=$this->getHttpResponse();
+                $body=$httpResponse->getBody();
+                if (is_array($body)) {
+                    $response["myCustom"] = "Hello world";
+                    $response["myData"] = $body;
+                    $httpResponse->setResponse($response);
+                } 
+            }
+        }
+    }
+
+    Le retour sera de la forme :
+
+    [javascript]
+    {
+        "myCustom":"Hello world",
+        "myData":{
+            "uri":"\/api\/v1\/documents\/35699\/locks\/permanent",
+            "lock":null}
         }
     }
 
